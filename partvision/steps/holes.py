@@ -1,8 +1,7 @@
 """Holes, openings and other closed features of any shape inside a part of any shape.
 
-Applies to every part that is not round, and to round parts where no bolt circle was found. Candidates come from
-pluggable sources (config analysis.holes.sources, in order; a later candidate at an already found feature is a
-duplicate):
+Applies to every part. Candidates come from pluggable sources (config analysis.holes.sources, in order;
+a later candidate at an already found feature is a duplicate):
   background - regions of background colour enclosed by the part: through-openings
   surface    - spots darker (or brighter, --hole-polarity) than the surface around them: holes, blind holes
   edges      - regions closed by a sharp edge all round (the same edge map that finds the outline): windows whose
@@ -10,6 +9,10 @@ duplicate):
 Every candidate is then measured the same way: a round one by a wall/edge fit on rays from its centre (as the bore
 and bolt holes of a round part), a rectangular one by a line fit on each of its four edges. Add a source by
 decorating a function with @source("name") and listing it in the config.
+
+On round parts where bolt_circle also ran, holes.py detects features that the bolt-circle specialist does not
+cover: slots, openings, blind holes off the bolt circle, pins/bosses and other non-round features.  The two steps
+complement each other; patterns.py merges both sets for pattern analysis.
 
 Settings in config analysis.holes (sizes relative to the part radius), analysis.rect_fit."""
 import math
@@ -293,15 +296,11 @@ def _edges(ctx, k):
     return out
 
 
-def _applies(ctx):
-    return not is_round(ctx) or not ctx.results.get("bolt_circle", {}).get("ok")
-
-
-@step("holes", needs=("part", "outline"), when=_applies)
+@step("holes", needs=("part", "outline"))
 def holes(ctx):
     """Holes, openings, windows, pins: candidates from every configured source, each measured by a precise fit."""
     k = C["analysis"]["holes"]
-    if is_round(ctx):
+    if is_round(ctx) and not ctx.results.get("bolt_circle", {}).get("ok"):
         ctx.warn("Round part without a bolt circle: also ran the generic hole finder.")
     cands, unfitted = [], 0
     for name in k["sources"]:

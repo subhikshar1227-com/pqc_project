@@ -1,0 +1,5 @@
+"# drawing check; nominal and measured positions in drawing mm (y down), tolerances diameter/position"
+feature,kind,prominence_rank,nominal_x,nominal_y,nominal_size,measured_x,measured_y,measured_size,position_dev_mm,size_dev_mm,tol_mm,status,note,dimension_check,detected
+outline,outline,1,,,49.23 x 82.55,,,,,rms 0.893,0.5,DEVIATES,"edge visible on only 48% of the outline; edge deviation +2.344 / -2.346 mm (+ = part larger than drawing); 34% of the edge outside tolerance, 52% not visible",UNCERTAIN,no
+W1,contour (rectangular),2,150.881,-105.000,25.67 x 25.65,,,,,,0.5/0.5,DEVIATES,"inner contour (recess/step edge): edge found on 70%, median offset +0.32 mm",DEVIATES,no
+

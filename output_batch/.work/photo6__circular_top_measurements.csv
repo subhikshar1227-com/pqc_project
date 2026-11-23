@@ -1,0 +1,26 @@
+"# drawing check; nominal and measured positions in drawing mm (y down), tolerances diameter/position"
+feature,kind,prominence_rank,nominal_x,nominal_y,nominal_size,measured_x,measured_y,measured_size,position_dev_mm,size_dev_mm,tol_mm,status,note,dimension_check,detected
+outline,outline,1,,,106.01 x 106.01,,,,,rms 0.190,0.5,DETECTED,"within +-0.27 mm (photo uncertainty) of the tolerance limit; edge deviation +0.575 / -2.523 mm (+ = part larger than drawing); 0% of the edge outside tolerance, 4% not visible",CAN'T VERIFY,yes
+W1,contour (irregular),2,148.621,-104.926,83.14 x 83.03,,,,,,0.5/0.5,DEVIATES,"edge visible on only 18% of the contour; inner contour (recess/step edge): edge found on 18%, median offset +1.42 mm",UNCERTAIN,no
+H1,hole,3,148.500,-105.000,29.000,,,,,,0.5/0.5,MISSING,no edge and no contrast at the expected place (7 gray levels),MISSING,
+H2,hole,4,171.084,-147.355,5.200,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (2 gray levels contrast there),MISSING,
+H3,hole,5,184.726,-136.491,5.200,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (0 gray levels contrast there),MISSING,
+H4,hole,6,195.451,-114.980,5.200,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (2 gray levels contrast there),MISSING,
+H5,hole,7,190.069,-81.000,5.200,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (1 gray levels contrast there),MISSING,
+H6,hole,8,172.500,-63.431,5.200,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (3 gray levels contrast there),MISSING,
+H7,hole,9,160.923,-58.636,5.200,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (1 gray levels contrast there),MISSING,
+H8,hole,10,137.702,-58.230,5.200,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (1 gray levels contrast there),MISSING,
+H9,hole,11,106.119,-82.465,5.200,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (1 gray levels contrast there),MISSING,
+H10,hole,12,100.500,-105.000,5.200,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (0 gray levels contrast there),MISSING,
+H11,hole,13,102.849,-119.833,5.200,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (2 gray levels contrast there),MISSING,
+H12,hole,14,114.559,-138.941,5.200,113.280,-139.011,5.663,1.281,+0.463,0.5/0.5,DETECTED,weak wall fit; ,UNCERTAIN,yes
+H13,hole,15,144.317,-152.817,5.200,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (1 gray levels contrast there),MISSING,
+H14,hole,16,102.136,-92.577,4.500,102.067,-92.406,4.473,0.185,-0.027,0.5/0.5,DETECTED,within +-0.39 mm (photo uncertainty) of the tolerance limit,CAN'T VERIFY,yes
+H15,hole,17,182.441,-71.059,4.500,182.547,-70.796,4.347,0.283,-0.153,0.5/0.5,DETECTED,within +-0.39 mm (photo uncertainty) of the tolerance limit,CAN'T VERIFY,yes
+H16,hole,18,160.923,-151.364,4.500,161.539,-151.253,4.563,0.625,+0.063,0.5/0.5,DETECTED,within +-0.39 mm (photo uncertainty) of the tolerance limit,CAN'T VERIFY,yes
+H17,hole,19,152.161,-63.160,4.000,152.462,-63.388,3.886,0.378,-0.114,0.5/0.5,DETECTED,within +-0.39 mm (photo uncertainty) of the tolerance limit,CAN'T VERIFY,yes
+H18,pin/boss? (round edge),20,148.500,-57.000,3.300,148.627,-57.154,2.626,0.200,-0.674,0.5/0.5,DETECTED,"within +-0.39 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H19,hole,21,106.931,-129.000,3.300,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (0 gray levels contrast there),MISSING,
+H20,hole,22,190.069,-129.000,3.300,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (1 gray levels contrast there),MISSING,
+RING1,ring,,148.500,-105.000,58.000,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+

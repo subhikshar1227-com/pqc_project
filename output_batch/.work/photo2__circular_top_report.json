@@ -1,0 +1,520 @@
+{
+ "image": "C:\\Users\\User\\Desktop\\projects\\pqc_x\\PRODUCT_QUALITY_CHECK\\photo2.jpeg",
+ "image_size_wh": [
+  1200,
+  1600
+ ],
+ "laplacian_var": 37.26219322047499,
+ "profile": "drawing",
+ "part": {
+  "segmentation": "edges",
+  "polarity": "dark part on light background",
+  "otsu_threshold": 83.0,
+  "mec_x": 624.6019897460938,
+  "mec_y": 772.3882446289062,
+  "mec_r": 251.49842834472656,
+  "mec_d": 502.9968566894531,
+  "fill_of_mec": 0.9574590773529001,
+  "touches_frame": false,
+  "area_px2": 190257.0,
+  "centroid": [
+   616.6188918147558,
+   772.076906500155
+  ],
+  "through_openings": 3
+ },
+ "detection_scale": 0.9940419971822938,
+ "drawing": {
+  "file": "dxf_files\\circular_top.dxf",
+  "info": {
+   "units": 4,
+   "mm_per_unit": 1.0,
+   "source": "dxf",
+   "skipped": {}
+  },
+  "registration": {
+   "coarse_iou": 0.9915131854332356,
+   "mirror": true,
+   "angle_deg": 129.8212180246851,
+   "px_per_mm": 4.707481901586891,
+   "outline_rms_px": 0.7214154601097107,
+   "outline_within_2px": 0.93,
+   "start": "hole-pair match",
+   "scale_outline": 4.705691534358186,
+   "scale_features": 4.725009473538223,
+   "outline_sigma_px": 0.7424515663743844,
+   "feature_sigma_px": 0.7177946374985307,
+   "n_datum": 5,
+   "score": 0.5057750203846645,
+   "hole_agreement": 0.2087750203846645,
+   "edge_found": 0.99,
+   "feature_agreement": 0.2087750203846645,
+   "feature_to_outline_scale_ratio": 1.00410522853846,
+   "candidates": [
+    {
+     "start": "hole-pair match",
+     "mirrored": true,
+     "angle_deg": 129.82,
+     "px_per_mm": 4.7075,
+     "score": 0.704,
+     "hole_agreement": 0.209,
+     "feature_agreement": 0.209
+    },
+    {
+     "start": "outline overlap search",
+     "mirrored": false,
+     "angle_deg": 234.72,
+     "px_per_mm": 4.7064,
+     "score": 0.671,
+     "hole_agreement": 0.193,
+     "feature_agreement": 0.193
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": false,
+     "angle_deg": 279.7,
+     "px_per_mm": 4.7045,
+     "score": 0.656,
+     "hole_agreement": 0.24,
+     "feature_agreement": 0.24
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": false,
+     "angle_deg": 159.37,
+     "px_per_mm": 4.7044,
+     "score": 0.655,
+     "hole_agreement": 0.236,
+     "feature_agreement": 0.236
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": true,
+     "angle_deg": 9.35,
+     "px_per_mm": 4.709,
+     "score": 0.628,
+     "hole_agreement": 0.234,
+     "feature_agreement": 0.234
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": false,
+     "angle_deg": 39.74,
+     "px_per_mm": 4.7043,
+     "score": 0.586,
+     "hole_agreement": 0.171,
+     "feature_agreement": 0.171
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": true,
+     "angle_deg": 249.72,
+     "px_per_mm": 4.705,
+     "score": 0.586,
+     "hole_agreement": 0.171,
+     "feature_agreement": 0.171
+    }
+   ],
+   "transform_px_from_mm": {
+    "A": [
+     [
+      -3.014643963812651,
+      3.615564634357417
+     ],
+     [
+      3.615564634357417,
+      3.014643963812651
+     ]
+    ],
+    "t": [
+     1452.069507398086,
+     552.2261214619994
+    ],
+    "usage": "x_px = A @ [x_mm, y_mm] + t  (drawing y down)"
+   },
+   "mm_per_px": 0.2124277949242673,
+   "scale_source": "fitted to the drawing",
+   "outline_p95_px_joint": 1.6205037832260132,
+   "outline_p95_px_own": 1.470503807067871,
+   "outline_own_scale": 4.705184919632784,
+   "outline_alignment": "joint with holes/openings",
+   "outline_rms_mm": 0.15324869541538155,
+   "outline_edge_found": 0.99375,
+   "uncertainty_edge_mm": 0.2619365012801823,
+   "uncertainty_hole_position_mm": 0.3458255331413845,
+   "uncertainty_hole_size_mm": 0.2124277949242673,
+   "hole_centre_rms_px": 1.2846314570303887,
+   "detection_tolerance": {
+    "position_mm": "max(1.0, 0.5 x nominal size)",
+    "size_mm": "max(1.5, 0.5 x nominal size)"
+   },
+   "features_inside_recess": [
+    "H1",
+    "H17"
+   ]
+  },
+  "outline_size_mm": [
+   106.00503440177674,
+   106.00503440177675
+  ],
+  "results": [
+   {
+    "id": "outline",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "rms_mm": 0.15167850255966187,
+    "max_excess_mm": 0.2186935991048813,
+    "max_shortfall_mm": -0.6310175657272339,
+    "fraction_out": 0.0
+   },
+   {
+    "id": "W1",
+    "kind": "contour",
+    "status": "DEVIATES",
+    "dimension_check": "UNCERTAIN",
+    "detected": false,
+    "note": "edge visible on only 42% of the contour; inner contour (recess/step edge): edge found on 42%, median offset +1.12 mm",
+    "edge_found": 0.425
+   },
+   {
+    "id": "H1",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 148.5,
+     "y": -105.0,
+     "d": 29.0
+    },
+    "position_dev_mm": 0.227,
+    "diameter_dev_mm": 0.005,
+    "note": "within +-0.35 mm (photo uncertainty) of the tolerance limit"
+   },
+   {
+    "id": "H2",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 171.084467993,
+     "y": -147.354950188,
+     "d": 5.2
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (2 gray levels contrast there)"
+   },
+   {
+    "id": "H3",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 184.726059851,
+     "y": -136.490833392,
+     "d": 5.2
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (0 gray levels contrast there)"
+   },
+   {
+    "id": "H4",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 195.451084835,
+     "y": -114.979761159,
+     "d": 5.2
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (3 gray levels contrast there)"
+   },
+   {
+    "id": "H5",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 190.069219382,
+     "y": -81.0,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.386,
+    "diameter_dev_mm": 0.606,
+    "note": "within +-0.35 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H6",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 172.5,
+     "y": -63.430780618,
+     "d": 5.2
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (6 gray levels contrast there)"
+   },
+   {
+    "id": "H7",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 160.923314165,
+     "y": -58.635560338,
+     "d": 5.2
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (9 gray levels contrast there)"
+   },
+   {
+    "id": "H8",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 137.702349391,
+     "y": -58.23023689,
+     "d": 5.2
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (10 gray levels contrast there)"
+   },
+   {
+    "id": "H9",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 106.118515543,
+     "y": -82.465364986,
+     "d": 5.2
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (10 gray levels contrast there)"
+   },
+   {
+    "id": "H10",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 100.5,
+     "y": -105.0,
+     "d": 5.2
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (1 gray levels contrast there)"
+   },
+   {
+    "id": "H11",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 102.849287218,
+     "y": -119.83281573,
+     "d": 5.2
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (1 gray levels contrast there)"
+   },
+   {
+    "id": "H12",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 114.558874503,
+     "y": -138.941125497,
+     "d": 5.2
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (6 gray levels contrast there)"
+   },
+   {
+    "id": "H13",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 144.316524348,
+     "y": -152.817345508,
+     "d": 5.2
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (3 gray levels contrast there)"
+   },
+   {
+    "id": "H14",
+    "kind": "hole",
+    "status": "OK",
+    "dimension_check": "OK",
+    "detected": true,
+    "nominal": {
+     "x": 102.135560338,
+     "y": -92.576685835,
+     "d": 4.5
+    },
+    "position_dev_mm": 0.151,
+    "diameter_dev_mm": 0.025,
+    "note": ""
+   },
+   {
+    "id": "H15",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 182.441125497,
+     "y": -71.058874503,
+     "d": 4.5
+    },
+    "position_dev_mm": 0.212,
+    "diameter_dev_mm": -0.336,
+    "note": "within +-0.35 mm (photo uncertainty) of the tolerance limit"
+   },
+   {
+    "id": "H16",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 160.923314165,
+     "y": -151.364439662,
+     "d": 4.5
+    },
+    "position_dev_mm": 0.345,
+    "diameter_dev_mm": -0.133,
+    "note": "within +-0.35 mm (photo uncertainty) of the tolerance limit"
+   },
+   {
+    "id": "H17",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 152.160541195,
+     "y": -63.15982268,
+     "d": 4.0
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (14 gray levels contrast there)"
+   },
+   {
+    "id": "H18",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 148.5,
+     "y": -57.0,
+     "d": 3.3
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (12 gray levels contrast there)"
+   },
+   {
+    "id": "H19",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 106.930780618,
+     "y": -129.0,
+     "d": 3.3
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (1 gray levels contrast there)"
+   },
+   {
+    "id": "H20",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 190.069219382,
+     "y": -129.0,
+     "d": 3.3
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (0 gray levels contrast there)"
+   },
+   {
+    "id": "RING1",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   }
+  ],
+  "status_counts": {
+   "DETECTED": 5,
+   "DEVIATES": 1,
+   "MISSING": 15,
+   "OK": 1,
+   "NOT MEASURED": 1
+  },
+  "detected": {
+   "found": 6,
+   "checked": 22
+  },
+  "dimension_check_counts": {
+   "CAN'T VERIFY": 5,
+   "UNCERTAIN": 1,
+   "MISSING": 15,
+   "OK": 1
+  }
+ },
+ "steps_run": [
+  "part",
+  "drawing_load",
+  "drawing_align",
+  "drawing_outline",
+  "drawing_features",
+  "drawing_report"
+ ],
+ "steps_skipped": [],
+ "warnings": [
+  "Two different alignments fit almost equally well (see registration.candidates in the report); check the overlay, or force the orientation with --mirror yes/no."
+ ],
+ "notes": [
+  "The photo matches the MIRROR image of the drawing view: it probably shows the other face.",
+  "Scale comes from fitting the drawing, so a part that is uniformly too big or too small cannot be detected. For absolute size, calibrate the camera once and pass --mm-per-px."
+ ]
+}

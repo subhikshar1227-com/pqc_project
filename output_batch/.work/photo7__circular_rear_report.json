@@ -1,0 +1,307 @@
+{
+ "image": "C:\\Users\\User\\Desktop\\projects\\pqc_x\\PRODUCT_QUALITY_CHECK\\photo7.png",
+ "image_size_wh": [
+  1280,
+  720
+ ],
+ "laplacian_var": 52.65414279377783,
+ "profile": "drawing",
+ "part": {
+  "segmentation": "edges",
+  "polarity": "dark part on light background",
+  "otsu_threshold": 135.0,
+  "mec_x": 613.476318359375,
+  "mec_y": 369.78997802734375,
+  "mec_r": 285.8932189941406,
+  "mec_d": 571.7864379882812,
+  "fill_of_mec": 0.9415745431727659,
+  "touches_frame": false,
+  "area_px2": 241775.5,
+  "centroid": [
+   622.3716471134034,
+   377.4398839694951
+  ],
+  "through_openings": 3
+ },
+ "detection_scale": 0.8744523597991449,
+ "drawing": {
+  "file": "dxf_files\\circular_rear.dxf",
+  "info": {
+   "units": 4,
+   "mm_per_unit": 1.0,
+   "source": "dxf",
+   "skipped": {}
+  },
+  "registration": {
+   "coarse_iou": 0.9868404824745319,
+   "mirror": true,
+   "angle_deg": 102.42595548417157,
+   "px_per_mm": 5.304922096786426,
+   "outline_rms_px": 2.9637391567230225,
+   "outline_within_2px": 0.9,
+   "start": "hole-pair match",
+   "scale_outline": 5.304695687921598,
+   "scale_features": 5.310929553633256,
+   "outline_sigma_px": 1.274123772665094,
+   "feature_sigma_px": 1.57978550330266,
+   "n_datum": 4,
+   "score": 1.1016081501694286,
+   "hole_agreement": 0.8016081501694285,
+   "edge_found": 1.0,
+   "feature_agreement": 0.8016081501694285,
+   "feature_to_outline_scale_ratio": 1.0011751599108414,
+   "candidates": [
+    {
+     "start": "hole-pair match",
+     "mirrored": true,
+     "angle_deg": 102.43,
+     "px_per_mm": 5.3049,
+     "score": 1.247,
+     "hole_agreement": 0.802,
+     "feature_agreement": 0.802
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": true,
+     "angle_deg": 222.42,
+     "px_per_mm": 5.2975,
+     "score": 1.111,
+     "hole_agreement": 0.739,
+     "feature_agreement": 0.739
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": false,
+     "angle_deg": 192.85,
+     "px_per_mm": 5.2968,
+     "score": 1.099,
+     "hole_agreement": 0.724,
+     "feature_agreement": 0.724
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": false,
+     "angle_deg": 356.77,
+     "px_per_mm": 5.301,
+     "score": 1.083,
+     "hole_agreement": 0.613,
+     "feature_agreement": 0.613
+    },
+    {
+     "start": "outline overlap search",
+     "mirrored": true,
+     "angle_deg": 103.95,
+     "px_per_mm": 5.2996,
+     "score": 1.054,
+     "hole_agreement": 0.565,
+     "feature_agreement": 0.565
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": false,
+     "angle_deg": 238.2,
+     "px_per_mm": 5.2945,
+     "score": 1.041,
+     "hole_agreement": 0.631,
+     "feature_agreement": 0.631
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": true,
+     "angle_deg": 28.17,
+     "px_per_mm": 5.2979,
+     "score": 0.973,
+     "hole_agreement": 0.553,
+     "feature_agreement": 0.553
+    },
+    {
+     "start": "outline overlap search",
+     "mirrored": false,
+     "angle_deg": 359.16,
+     "px_per_mm": 5.2999,
+     "score": 0.95,
+     "hole_agreement": 0.408,
+     "feature_agreement": 0.408
+    }
+   ],
+   "transform_px_from_mm": {
+    "A": [
+     [
+      -1.1415011801082149,
+      5.180653772332644
+     ],
+     [
+      5.180653772332644,
+      1.1415011801082149
+     ]
+    ],
+    "t": [
+     1328.9592917808768,
+     -279.2733528604059
+    ],
+    "usage": "x_px = A @ [x_mm, y_mm] + t  (drawing y down)"
+   },
+   "mm_per_px": 0.18850418191923535,
+   "scale_source": "fitted to the drawing",
+   "outline_p95_px_joint": 6.370452880859375,
+   "outline_p95_px_own": 4.370452880859375,
+   "outline_own_scale": 5.294491596773293,
+   "outline_alignment": "own (shape check)",
+   "outline_rms_mm": 0.5586772251600778,
+   "outline_edge_found": 1.0,
+   "uncertainty_edge_mm": 0.5896219708538721,
+   "uncertainty_hole_position_mm": 0.6053282607039128,
+   "uncertainty_hole_size_mm": 0.18850418191923535,
+   "hole_centre_rms_px": 3.0515453747964907,
+   "detection_tolerance": {
+    "position_mm": "max(1.0, 0.5 x nominal size)",
+    "size_mm": "max(1.5, 0.5 x nominal size)"
+   },
+   "features_inside_recess": []
+  },
+  "outline_size_mm": [
+   106.00503440177681,
+   106.00503440177683
+  ],
+  "results": [
+   {
+    "id": "outline",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "rms_mm": 0.5551521182060242,
+    "max_excess_mm": 1.5324536561965942,
+    "max_shortfall_mm": -2.9916467666625977,
+    "fraction_out": 0.09375
+   },
+   {
+    "id": "H1",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 148.5,
+     "y": -105.0,
+     "d": 29.0
+    },
+    "position_dev_mm": 0.598,
+    "diameter_dev_mm": 0.29,
+    "note": "within +-0.61 mm (photo uncertainty) of the tolerance limit"
+   },
+   {
+    "id": "H2",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 182.441125497,
+     "y": -138.941125497,
+     "d": 4.5
+    },
+    "position_dev_mm": 0.47,
+    "diameter_dev_mm": 0.461,
+    "note": "within +-0.61 mm (photo uncertainty) of the tolerance limit"
+   },
+   {
+    "id": "H3",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 102.135560338,
+     "y": -117.423314165,
+     "d": 4.5
+    },
+    "position_dev_mm": 0.489,
+    "diameter_dev_mm": 0.196,
+    "note": "within +-0.61 mm (photo uncertainty) of the tolerance limit"
+   },
+   {
+    "id": "H4",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 160.923314165,
+     "y": -58.635560338,
+     "d": 4.5
+    },
+    "position_dev_mm": 0.295,
+    "diameter_dev_mm": 0.1,
+    "note": "within +-0.61 mm (photo uncertainty) of the tolerance limit"
+   },
+   {
+    "id": "H5",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "UNCERTAIN",
+    "detected": true,
+    "nominal": {
+     "x": 152.160541195,
+     "y": -146.84017732,
+     "d": 4.0
+    },
+    "position_dev_mm": 1.45,
+    "diameter_dev_mm": 1.95,
+    "note": "weak wall fit; "
+   },
+   {
+    "id": "RING1",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   },
+   {
+    "id": "RING2",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   },
+   {
+    "id": "RING3",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   },
+   {
+    "id": "RING4",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   },
+   {
+    "id": "RING5",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   }
+  ],
+  "status_counts": {
+   "DETECTED": 6,
+   "NOT MEASURED": 5
+  },
+  "detected": {
+   "found": 6,
+   "checked": 6
+  },
+  "dimension_check_counts": {
+   "CAN'T VERIFY": 5,
+   "UNCERTAIN": 1
+  }
+ },
+ "steps_run": [
+  "part",
+  "drawing_load",
+  "drawing_align",
+  "drawing_outline",
+  "drawing_features",
+  "drawing_report"
+ ],
+ "steps_skipped": [],
+ "warnings": [
+  "The outline and the holes/openings do not fit one flat mapping (outline-only fit: scale -0.2%, edge error 0.83 mm vs 1.20 mm with the holes): they are at different heights (stepped or stacked part) or the camera is close and angled. The outline SHAPE is checked with its own alignment; its position relative to the holes is not checked from this photo."
+ ],
+ "notes": [
+  "The photo matches the MIRROR image of the drawing view: it probably shows the other face.",
+  "Scale comes from fitting the drawing, so a part that is uniformly too big or too small cannot be detected. For absolute size, calibrate the camera once and pass --mm-per-px."
+ ]
+}

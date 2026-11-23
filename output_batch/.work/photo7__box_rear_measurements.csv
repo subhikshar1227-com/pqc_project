@@ -1,0 +1,5 @@
+"# drawing check; nominal and measured positions in drawing mm (y down), tolerances diameter/position"
+feature,kind,prominence_rank,nominal_x,nominal_y,nominal_size,measured_x,measured_y,measured_size,position_dev_mm,size_dev_mm,tol_mm,status,note,dimension_check,detected
+outline,outline,1,,,49.23 x 82.55,,,,,rms 0.986,0.5,DETECTED,"edge deviation +2.380 / -2.358 mm (+ = part larger than drawing); 40% of the edge outside tolerance, 40% not visible",DEVIATES,yes
+W1,opening (rectangular),2,150.881,-105.000,25.67 x 25.65,155.071,-106.559,66.09 x 66.09,4.471,,0.5/0.5,DEVIATES,overlap with drawing 13%; L +40.42 W +40.44 mm (brightness region),DEVIATES,no
+

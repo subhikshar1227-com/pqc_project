@@ -1,0 +1,135 @@
+{
+ "image": "C:\\Users\\User\\Desktop\\projects\\pqc_x\\PRODUCT_QUALITY_CHECK\\photo5.jpeg",
+ "image_size_wh": [
+  960,
+  1280
+ ],
+ "laplacian_var": 18.504658183985285,
+ "profile": "inspect",
+ "part": {
+  "segmentation": "edges",
+  "polarity": "dark part on light background",
+  "otsu_threshold": 73.0,
+  "mec_x": 558.4395751953125,
+  "mec_y": 616.7235717773438,
+  "mec_r": 157.4958953857422,
+  "mec_d": 314.9917907714844,
+  "fill_of_mec": 0.6009914073429584,
+  "touches_frame": false,
+  "area_px2": 46833.5,
+  "centroid": [
+   528.6193429916619,
+   612.3511090707862
+  ],
+  "through_openings": 4
+ },
+ "detection_scale": 1.5873429551144482,
+ "outline": {
+  "shape": "polygon (10 corners)",
+  "area_px2": 46833.5,
+  "perimeter_px": 912.457931637764,
+  "circularity": 0.7068719977125552,
+  "solidity": 0.9519778030734206,
+  "min_rect_length": 313.296630859375,
+  "min_rect_width": 188.6846923828125,
+  "min_rect_angle_deg": 88.401465201692,
+  "rect_fill": 0.7922536018899177,
+  "corners": 10,
+  "analysed_as": "other",
+  "circle_fit": {
+   "x": 534.8553349821341,
+   "y": 614.004532816483,
+   "d": 251.59270688616039,
+   "std": 22.88487675642224,
+   "inlier_fraction": 1.0
+  },
+  "cut_ins": [
+   {
+    "start": [
+     443.0,
+     715.0
+    ],
+    "end": [
+     554.0,
+     769.0
+    ],
+    "deepest": [
+     527.0,
+     715.0
+    ],
+    "depth": 36.74609375,
+    "mouth_width": 123.4382436686459,
+    "name": "C1"
+   }
+  ]
+ },
+ "surface_hole_threshold": {
+  "threshold": 25.0,
+  "spread": 46.0,
+  "polarity": "dark"
+ },
+ "edge_regions": {
+  "gap_px": 1,
+  "kept": 1,
+  "rejected_texture": 4
+ },
+ "holes_generic": [
+  {
+   "x": 510.82949079274545,
+   "y": 619.2368862382078,
+   "area": 6681.5,
+   "eq_d": 92.23421283963988,
+   "length": 100.1027243758542,
+   "width": 99.08604740035753,
+   "aspect": 1.0102605462844712,
+   "circularity": 0.25922470453845425,
+   "solidity": 0.8975685115529285,
+   "axis_deg": 0.7355953106686454,
+   "shape": "rectangular",
+   "source": "closed sharp edge",
+   "fit": {
+    "method": "4-edge line fit",
+    "std": 0.9604960680007935,
+    "rays": 156,
+    "of": 160
+   },
+   "d": 112.37876633757767,
+   "inside_vs_around": "brighter",
+   "u": 157.71953147946465,
+   "v": 103.34620557643643,
+   "n": "H1",
+   "R": 19.075973591370893,
+   "ang": 158.84046906384822,
+   "contains_origin": true
+  }
+ ],
+ "patterns": [],
+ "pockets": [],
+ "ratios": {
+  "length_over_width": 1.6604242077239835
+ },
+ "dims_px": {
+  "length": 313.296630859375,
+  "width": 188.6846923828125
+ },
+ "steps_run": [
+  "part",
+  "outline",
+  "holes",
+  "patterns",
+  "pockets",
+  "scale",
+  "ratios"
+ ],
+ "steps_skipped": [
+  "bore",
+  "round_rim",
+  "bolt_circle",
+  "rim_notches",
+  "rings"
+ ],
+ "warnings": [],
+ "notes": [
+  "4 light region(s) inside the outline were not counted as openings (thin or not background-coloured: highlights or reflections)."
+ ]
+}

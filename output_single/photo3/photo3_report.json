@@ -1,0 +1,229 @@
+{
+ "image": "C:\\Users\\User\\Desktop\\projects\\pqc_x\\PRODUCT_QUALITY_CHECK\\photo3.jpeg",
+ "image_size_wh": [
+  960,
+  1280
+ ],
+ "laplacian_var": 31.88963051934772,
+ "profile": "inspect",
+ "part": {
+  "segmentation": "edges",
+  "polarity": "dark part on light background",
+  "otsu_threshold": 76.0,
+  "mec_x": 505.32757568359375,
+  "mec_y": 589.4425048828125,
+  "mec_r": 149.02723693847656,
+  "mec_d": 298.0544738769531,
+  "fill_of_mec": 0.6238462428684983,
+  "touches_frame": false,
+  "area_px2": 43527.0,
+  "centroid": [
+   512.2617494122421,
+   612.6206147908194
+  ],
+  "through_openings": 12
+ },
+ "detection_scale": 1.6775456965843658,
+ "outline": {
+  "shape": "irregular",
+  "area_px2": 43527.0,
+  "perimeter_px": 912.357426404953,
+  "circularity": 0.6571107566865775,
+  "solidity": 0.9283284457478006,
+  "min_rect_length": 293.5246887207031,
+  "min_rect_width": 199.15444946289062,
+  "min_rect_angle_deg": -1.8476113188934866,
+  "rect_fill": 0.7446018064397112,
+  "corners": 13,
+  "analysed_as": "other",
+  "circle_fit": {
+   "x": 510.21774251890156,
+   "y": 607.7296430983398,
+   "d": 241.6221397833668,
+   "std": 20.162019645213473,
+   "inlier_fraction": 1.0
+  },
+  "cut_ins": [
+   {
+    "start": [
+     361.0,
+     589.0
+    ],
+    "end": [
+     415.0,
+     699.0
+    ],
+    "deepest": [
+     411.0,
+     617.0
+    ],
+    "depth": 32.54296875,
+    "mouth_width": 122.53978945632312,
+    "name": "C1"
+   },
+   {
+    "start": [
+     433.0,
+     712.0
+    ],
+    "end": [
+     556.0,
+     726.0
+    ],
+    "deepest": [
+     543.0,
+     708.0
+    ],
+    "depth": 16.4140625,
+    "mouth_width": 123.79418403139947,
+    "name": "C2"
+   },
+   {
+    "start": [
+     565.0,
+     724.0
+    ],
+    "end": [
+     600.0,
+     704.0
+    ],
+    "deepest": [
+     567.0,
+     708.0
+    ],
+    "depth": 12.8984375,
+    "mouth_width": 40.311288741492746,
+    "name": "C3"
+   }
+  ]
+ },
+ "surface_hole_threshold": {
+  "threshold": 25.0,
+  "spread": 59.0,
+  "polarity": "dark"
+ },
+ "edge_regions": {
+  "gap_px": 1,
+  "kept": 5,
+  "rejected_texture": 17,
+  "not_fitted": 4
+ },
+ "holes_generic": [
+  {
+   "x": 421.1747951718186,
+   "y": 556.1277754885531,
+   "area": 156.5,
+   "eq_d": 14.1160188704554,
+   "length": 14.976905822753906,
+   "width": 14.144856452941895,
+   "aspect": 1.0588234580237794,
+   "circularity": 0.7166614164558902,
+   "solidity": 0.9205882352941176,
+   "axis_deg": 56.30999723433236,
+   "shape": "round",
+   "source": "blind/surface hole (darker than surface)",
+   "fit": {
+    "method": "wall fit",
+    "std": 0.24028120187989457,
+    "rays": 64,
+    "of": 72
+   },
+   "d": 14.667042561787513,
+   "inside_vs_around": "darker",
+   "u": 63.87934536421369,
+   "v": 25.02357194208775,
+   "n": "H1",
+   "R": 107.18336683099997,
+   "ang": 211.8075120960305,
+   "contains_origin": false
+  },
+  {
+   "x": 540.405033118094,
+   "y": 552.9140452968344,
+   "area": 161.5,
+   "eq_d": 14.339741506551949,
+   "length": 16.0,
+   "width": 14.0,
+   "aspect": 1.1428571428571428,
+   "circularity": 0.6383497194484923,
+   "solidity": 0.9150141643059491,
+   "axis_deg": 90.0,
+   "shape": "round",
+   "source": "blind/surface hole (darker than surface)",
+   "fit": {
+    "method": "wall fit",
+    "std": 0.5559089266770738,
+    "rays": 72,
+    "of": 72
+   },
+   "d": 14.940208103986683,
+   "inside_vs_around": "darker",
+   "u": 183.15120665025992,
+   "v": 25.655651842541246,
+   "n": "H2",
+   "R": 66.00696068209879,
+   "ang": 295.23731088279766,
+   "contains_origin": false
+  },
+  {
+   "x": 506.41341223841215,
+   "y": 626.1842446076706,
+   "area": 6792.0,
+   "eq_d": 92.99377929647352,
+   "length": 98.72610538673214,
+   "width": 98.20578760084294,
+   "aspect": 1.0052982395294667,
+   "circularity": 0.5531946732913207,
+   "solidity": 0.9379272250224401,
+   "axis_deg": 178.69104313747889,
+   "shape": "rectangular",
+   "source": "closed sharp edge",
+   "fit": {
+    "method": "4-edge line fit",
+    "std": 0.9600165486335754,
+    "rays": 157,
+    "of": 160
+   },
+   "d": 111.10653488361908,
+   "inside_vs_around": "darker",
+   "u": 146.81493180130227,
+   "v": 97.79182126459621,
+   "n": "H3",
+   "R": 14.77075155526542,
+   "ang": 113.32463686990899,
+   "contains_origin": true
+  }
+ ],
+ "patterns": [],
+ "pockets": [],
+ "ratios": {
+  "length_over_width": 1.4738545360765185
+ },
+ "dims_px": {
+  "length": 293.5246887207031,
+  "width": 199.15444946289062,
+  "hole": 14.803625332887098
+ },
+ "steps_run": [
+  "part",
+  "outline",
+  "holes",
+  "patterns",
+  "pockets",
+  "scale",
+  "ratios"
+ ],
+ "steps_skipped": [
+  "bore",
+  "round_rim",
+  "bolt_circle",
+  "rim_notches",
+  "rings"
+ ],
+ "warnings": [
+  "The part is only 298 px across: low resolution, expect +-1 px errors to matter."
+ ],
+ "notes": [
+  "11 light region(s) inside the outline were not counted as openings (thin or not background-coloured: highlights or reflections)."
+ ]
+}

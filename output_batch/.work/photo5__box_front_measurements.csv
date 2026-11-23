@@ -1,0 +1,13 @@
+"# drawing check; nominal and measured positions in drawing mm (y down), tolerances diameter/position"
+feature,kind,prominence_rank,nominal_x,nominal_y,nominal_size,measured_x,measured_y,measured_size,position_dev_mm,size_dev_mm,tol_mm,status,note,dimension_check,detected
+outline,outline,1,,,49.23 x 82.55,,,,,rms 0.095,0.5,DETECTED,"within +-0.29 mm (photo uncertainty) of the tolerance limit; edge deviation +0.184 / -0.481 mm (+ = part larger than drawing); 0% of the edge outside tolerance, 0% not visible",CAN'T VERIFY,yes
+W1,opening (rectangular),2,146.119,-105.000,25.65 x 25.65,146.072,-105.199,26.62 x 26.36,0.205,,0.5/0.5,DETECTED,overlap with drawing 93%; L +0.97 W +0.71 mm (4-edge line fit),DEVIATES,yes
+H1,hole,3,161.993,-74.836,7.925,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (1 gray levels contrast there),MISSING,
+H2,pin/boss? (round edge),4,165.174,-95.469,3.185,165.106,-95.522,3.178,0.085,-0.007,0.5/0.5,OK,"round edge found but not a dark hole: pin, boss, plug or spot face",OK,yes
+H3,pin/boss? (round edge),5,165.174,-127.219,3.185,164.931,-127.195,3.058,0.244,-0.128,0.5/0.5,DETECTED,"within +-0.29 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+RING1,ring,,165.174,-127.219,3.799,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+RING2,ring,,165.174,-127.219,6.097,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+RING3,ring,,165.174,-95.469,3.799,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+RING4,ring,,165.174,-95.469,6.097,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+RING5,ring,,161.993,-74.836,9.496,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+

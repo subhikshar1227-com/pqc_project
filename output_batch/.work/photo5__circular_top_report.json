@@ -1,0 +1,526 @@
+{
+ "image": "C:\\Users\\User\\Desktop\\projects\\pqc_x\\PRODUCT_QUALITY_CHECK\\photo5.jpeg",
+ "image_size_wh": [
+  960,
+  1280
+ ],
+ "laplacian_var": 18.504658183985285,
+ "profile": "drawing",
+ "part": {
+  "segmentation": "edges",
+  "polarity": "dark part on light background",
+  "otsu_threshold": 73.0,
+  "mec_x": 558.4395751953125,
+  "mec_y": 616.7235717773438,
+  "mec_r": 157.4958953857422,
+  "mec_d": 314.9917907714844,
+  "fill_of_mec": 0.6009914073429584,
+  "touches_frame": false,
+  "area_px2": 46833.5,
+  "centroid": [
+   528.6193429916619,
+   612.3511090707862
+  ],
+  "through_openings": 4
+ },
+ "detection_scale": 1.5873429551144482,
+ "drawing": {
+  "file": "dxf_files\\circular_top.dxf",
+  "info": {
+   "units": 4,
+   "mm_per_unit": 1.0,
+   "source": "dxf",
+   "skipped": {}
+  },
+  "registration": {
+   "coarse_iou": 0.7526936407474382,
+   "mirror": true,
+   "angle_deg": 296.3325351467508,
+   "px_per_mm": 2.307361659961031,
+   "outline_rms_px": 3.8198254108428955,
+   "outline_within_2px": 0.16625,
+   "start": "outline overlap search",
+   "scale_outline": 2.3052143144554003,
+   "scale_features": 2.3086088355816234,
+   "outline_sigma_px": 2.432631868588391,
+   "feature_sigma_px": 0.750183774025741,
+   "n_datum": 17,
+   "score": 0.35254891467290767,
+   "hole_agreement": 0.27754891467290765,
+   "edge_found": 0.25,
+   "feature_agreement": 0.27754891467290765,
+   "feature_to_outline_scale_ratio": 1.0014725403642242,
+   "candidates": [
+    {
+     "start": "outline overlap search",
+     "mirrored": true,
+     "angle_deg": 296.33,
+     "px_per_mm": 2.3074,
+     "score": 0.503,
+     "hole_agreement": 0.278,
+     "feature_agreement": 0.278
+    },
+    {
+     "start": "outline overlap search",
+     "mirrored": false,
+     "angle_deg": 58.21,
+     "px_per_mm": 2.3043,
+     "score": 0.439,
+     "hole_agreement": 0.212,
+     "feature_agreement": 0.212
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": true,
+     "angle_deg": 247.52,
+     "px_per_mm": 1.8265,
+     "score": 0.352,
+     "hole_agreement": 0.227,
+     "feature_agreement": 0.227
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": false,
+     "angle_deg": 39.16,
+     "px_per_mm": 1.7124,
+     "score": 0.329,
+     "hole_agreement": 0.206,
+     "feature_agreement": 0.206
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": true,
+     "angle_deg": 307.66,
+     "px_per_mm": 1.7139,
+     "score": 0.323,
+     "hole_agreement": 0.196,
+     "feature_agreement": 0.196
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": true,
+     "angle_deg": 248.8,
+     "px_per_mm": 2.6826,
+     "score": 0.307,
+     "hole_agreement": 0.168,
+     "feature_agreement": 0.168
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": false,
+     "angle_deg": 98.58,
+     "px_per_mm": 2.7258,
+     "score": 0.253,
+     "hole_agreement": 0.118,
+     "feature_agreement": 0.118
+    },
+    {
+     "start": "hole-pair match",
+     "mirrored": false,
+     "angle_deg": 286.95,
+     "px_per_mm": 1.467,
+     "score": 0.222,
+     "hole_agreement": 0.184,
+     "feature_agreement": 0.184
+    }
+   ],
+   "transform_px_from_mm": {
+    "A": [
+     [
+      1.0234999121919326,
+      -2.0679375618236713
+     ],
+     [
+      -2.0679375618236713,
+      -1.0234999121919326
+     ]
+    ],
+    "t": [
+     154.53240339791495,
+     812.1052623953061
+    ],
+    "usage": "x_px = A @ [x_mm, y_mm] + t  (drawing y down)"
+   },
+   "mm_per_px": 0.4333954305268681,
+   "scale_source": "fitted to the drawing",
+   "outline_p95_px_joint": 6.25,
+   "outline_p95_px_own": 6.162241458892822,
+   "outline_own_scale": 2.0901310833203497,
+   "outline_alignment": "joint with holes/openings",
+   "outline_rms_mm": 1.6554948784697274,
+   "outline_edge_found": 0.36375,
+   "uncertainty_edge_mm": 1.711284573599922,
+   "uncertainty_hole_position_mm": 0.5782521563988914,
+   "uncertainty_hole_size_mm": 0.4333954305268681,
+   "hole_centre_rms_px": 0.8832825066081871,
+   "detection_tolerance": {
+    "position_mm": "max(1.0, 0.5 x nominal size)",
+    "size_mm": "max(1.5, 0.5 x nominal size)"
+   },
+   "features_inside_recess": [
+    "H1",
+    "H17"
+   ]
+  },
+  "outline_size_mm": [
+   106.00503440177674,
+   106.00503440177675
+  ],
+  "results": [
+   {
+    "id": "outline",
+    "status": "DEVIATES",
+    "dimension_check": "UNCERTAIN",
+    "detected": false,
+    "rms_mm": 0.9816477298736572,
+    "max_excess_mm": 2.887385129928589,
+    "max_shortfall_mm": -2.746755599975586,
+    "fraction_out": 0.23625
+   },
+   {
+    "id": "W1",
+    "kind": "contour",
+    "status": "DEVIATES",
+    "dimension_check": "UNCERTAIN",
+    "detected": false,
+    "note": "edge visible on only 33% of the contour; inner contour (recess/step edge): edge found on 33%, median offset +0.50 mm",
+    "edge_found": 0.3325
+   },
+   {
+    "id": "H1",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "DEVIATES",
+    "detected": true,
+    "nominal": {
+     "x": 148.5,
+     "y": -105.0,
+     "d": 29.0
+    },
+    "position_dev_mm": 1.909,
+    "diameter_dev_mm": 3.468,
+    "note": ""
+   },
+   {
+    "id": "H2",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 171.084467993,
+     "y": -147.354950188,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.164,
+    "diameter_dev_mm": -0.322,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H3",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 184.726059851,
+     "y": -136.490833392,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.933,
+    "diameter_dev_mm": -0.716,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H4",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 195.451084835,
+     "y": -114.979761159,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.423,
+    "diameter_dev_mm": 0.109,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H5",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 190.069219382,
+     "y": -81.0,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.394,
+    "diameter_dev_mm": 0.101,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H6",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 172.5,
+     "y": -63.430780618,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.307,
+    "diameter_dev_mm": 0.127,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H7",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 160.923314165,
+     "y": -58.635560338,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.454,
+    "diameter_dev_mm": 0.045,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H8",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 137.702349391,
+     "y": -58.23023689,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.288,
+    "diameter_dev_mm": -0.249,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H9",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 106.118515543,
+     "y": -82.465364986,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.084,
+    "diameter_dev_mm": -0.257,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H10",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 100.5,
+     "y": -105.0,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.34,
+    "diameter_dev_mm": -0.331,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H11",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 102.849287218,
+     "y": -119.83281573,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.377,
+    "diameter_dev_mm": -0.024,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H12",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 114.558874503,
+     "y": -138.941125497,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.198,
+    "diameter_dev_mm": -0.03,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H13",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 144.316524348,
+     "y": -152.817345508,
+     "d": 5.2
+    },
+    "position_dev_mm": 0.419,
+    "diameter_dev_mm": -0.168,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H14",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 102.135560338,
+     "y": -92.576685835,
+     "d": 4.5
+    },
+    "position_dev_mm": 0.392,
+    "diameter_dev_mm": -0.093,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H15",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 182.441125497,
+     "y": -71.058874503,
+     "d": 4.5
+    },
+    "position_dev_mm": 0.117,
+    "diameter_dev_mm": 0.061,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H16",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 160.923314165,
+     "y": -151.364439662,
+     "d": 4.5
+    },
+    "position_dev_mm": 0.122,
+    "diameter_dev_mm": -0.029,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H17",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 152.160541195,
+     "y": -63.15982268,
+     "d": 4.0
+    },
+    "position_dev_mm": 0.16,
+    "diameter_dev_mm": 0.106,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H18",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 148.5,
+     "y": -57.0,
+     "d": 3.3
+    },
+    "position_dev_mm": 0.114,
+    "diameter_dev_mm": -0.047,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H19",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 106.930780618,
+     "y": -129.0,
+     "d": 3.3
+    },
+    "position_dev_mm": 0.068,
+    "diameter_dev_mm": -0.171,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "H20",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 190.069219382,
+     "y": -129.0,
+     "d": 3.3
+    },
+    "position_dev_mm": 0.331,
+    "diameter_dev_mm": -0.103,
+    "note": "within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face"
+   },
+   {
+    "id": "RING1",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   }
+  ],
+  "status_counts": {
+   "DEVIATES": 2,
+   "DETECTED": 20,
+   "NOT MEASURED": 1
+  },
+  "detected": {
+   "found": 20,
+   "checked": 22
+  },
+  "dimension_check_counts": {
+   "UNCERTAIN": 2,
+   "DEVIATES": 1,
+   "CAN'T VERIFY": 19
+  }
+ },
+ "steps_run": [
+  "part",
+  "drawing_load",
+  "drawing_align",
+  "drawing_outline",
+  "drawing_features",
+  "drawing_report"
+ ],
+ "steps_skipped": [],
+ "warnings": [
+  "The photo outline overlaps the drawing only 75%: wrong drawing, the other face, a damaged part, or the outline was not separated cleanly (reflections). Check the image."
+ ],
+ "notes": [
+  "The photo matches the MIRROR image of the drawing view: it probably shows the other face.",
+  "Scale comes from fitting the drawing, so a part that is uniformly too big or too small cannot be detected. For absolute size, calibrate the camera once and pass --mm-per-px."
+ ]
+}

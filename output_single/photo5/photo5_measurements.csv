@@ -1,0 +1,10 @@
+"# holes and openings; u/v = position along the part's long/short axis from frame origin 0; diameter = fitted for round features, else area-equivalent; length/width fitted for rectangles"
+hole,shape,source,x_px,y_px,u_px,v_px,diameter_px,length_px,width_px,axis_deg,circularity,measured_by,inside_vs_around
+H1,rectangular,closed sharp edge,510.83,619.24,157.72,103.35,112.38,100.10,99.09,0.7,0.259,4-edge line fit,brighter
+
+# features
+feature,size_px,angle_start_deg,angle_end_deg,span_deg,note
+length (min-area rectangle),313.30,,,,long axis at 88.4 deg
+width (min-area rectangle),188.68,,,,
+cut-in C1,36.75,,,,depth; mouth width 123.4 px
+

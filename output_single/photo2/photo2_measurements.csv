@@ -1,0 +1,32 @@
+# per-hole table; angles clockwise on screen about the bore centre; group off circle = not on the bolt circle
+hole,group,angle_deg,radius_from_centre_px,diameter_px,x_px,y_px,type,ring_outer_diameter_px
+1,bolt circle,324.79,227.77,21.30,810.04,642.02,standard,
+2,bolt circle,84.83,225.71,19.62,644.29,998.14,standard,
+3,bolt circle,204.78,226.64,20.50,418.17,678.36,standard,
+
+# neighbour-spacing table; big_gap means pitch > 1.5 x median pitch (180.02 deg)
+from_hole,to_hole,pitch_deg,centre_distance_px,big_gap
+1,2,120.04,392.80,no
+2,3,119.95,391.65,no
+3,1,120.01,393.55,no
+
+"# holes and openings; u/v = position along the part's long/short axis from frame origin 0; diameter = fitted for round features, else area-equivalent; length/width fitted for rectangles"
+hole,shape,source,x_px,y_px,u_px,v_px,diameter_px,length_px,width_px,axis_deg,circularity,measured_by,inside_vs_around
+H1,round,blind/surface hole (darker than surface),810.05,642.01,433.18,116.51,21.39,20.00,19.00,90.0,0.895,wall fit,darker
+H2,round,blind/surface hole (darker than surface),418.18,678.36,42.32,162.52,20.50,20.00,19.00,90.0,0.890,wall fit,darker
+H3,round,blind/surface hole (darker than surface),644.29,998.14,276.26,476.62,19.65,19.23,17.44,26.6,0.853,wall fit,darker
+
+# hole patterns (holes of the same shape and size)
+pattern,kind,holes,count,circle_diameter_px,mean_spacing_px,mean_pitch_deg,rect_long_side_px,rect_short_side_px,spread,uniform
+PC1,circular,H3 H2 H1,3,453.42,,120.00,,,0.97 deg,yes
+
+# features
+feature,size_px,angle_start_deg,angle_end_deg,span_deg,note
+bore,136.50,,,,edge fit
+outer rim,498.44,,,,rim fit; enclosing circle 503.00
+bolt circle,453.41,,,,3 holes
+notch N1,,343.0,20.5,37.5,max depth 48.4 px
+ring/step,194.36,,,,"weak edge, unconfirmed, lighter outward"
+ring/step,255.77,,,,"edge found but not a clean circle, lighter outward"
+ring/step,287.24,,,,"confirmed ring, darker outward"
+

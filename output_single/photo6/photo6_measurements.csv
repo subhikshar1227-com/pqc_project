@@ -1,0 +1,36 @@
+# per-hole table; angles clockwise on screen about the bore centre; group off circle = not on the bolt circle
+hole,group,angle_deg,radius_from_centre_px,diameter_px,x_px,y_px,type,ring_outer_diameter_px
+1,bolt circle,290.39,254.76,23.15,635.66,136.28,standard,
+2,bolt circle,50.14,257.28,24.22,711.79,572.58,standard,
+3,bolt circle,170.17,257.25,23.92,293.43,419.02,standard,
+A1,off circle,250.58,220.72,20.63,473.53,166.92,,
+
+# neighbour-spacing table; big_gap means pitch > 1.5 x median pitch (180.04 deg)
+from_hole,to_hole,pitch_deg,centre_distance_px,big_gap
+1,2,119.75,442.89,no
+2,3,120.02,445.65,no
+3,1,120.22,443.91,no
+
+"# holes and openings; u/v = position along the part's long/short axis from frame origin 0; diameter = fitted for round features, else area-equivalent; length/width fitted for rectangles"
+hole,shape,source,x_px,y_px,u_px,v_px,diameter_px,length_px,width_px,axis_deg,circularity,measured_by,inside_vs_around
+H1,round,blind/surface hole (darker than surface),635.72,136.32,236.70,28.53,23.07,23.00,23.00,0.0,0.860,wall fit,darker
+H2,round,blind/surface hole (darker than surface),473.49,166.94,106.79,130.41,20.41,21.00,19.00,90.0,0.866,wall fit,darker
+H3,round,closed sharp edge,547.31,375.11,268.18,281.21,156.56,132.00,131.00,90.0,0.790,edge fit,brighter
+H4,round,blind/surface hole (darker than surface),711.79,572.58,505.12,380.76,24.18,23.00,22.00,90.0,0.860,wall fit,darker
+H5,round,blind/surface hole (darker than surface),293.44,419.02,63.04,437.09,23.88,23.85,22.37,58.0,0.807,wall fit,darker
+
+# hole patterns (holes of the same shape and size)
+pattern,kind,holes,count,circle_diameter_px,mean_spacing_px,mean_pitch_deg,rect_long_side_px,rect_short_side_px,spread,uniform
+PC1,circular,H4 H5 H1,3,512.86,,120.00,,,1.25 deg,no
+
+# features
+feature,size_px,angle_start_deg,angle_end_deg,span_deg,note
+bore,154.86,,,,edge fit
+outer rim,564.30,,,,rim fit; enclosing circle 575.87
+bolt circle,512.87,,,,3 holes
+notch N1,,209.0,225.5,16.5,max depth 48.1 px
+notch N2,,107.5,109.5,2.0,max depth 101.6 px
+notch N3,,146.0,148.0,2.0,max depth 102.2 px
+ring/step,295.00,,,,"confirmed ring, lighter outward"
+ring/step,312.71,,,,"edge found but not a clean circle, darker outward"
+

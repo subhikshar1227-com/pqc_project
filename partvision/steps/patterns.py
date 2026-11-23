@@ -1,4 +1,13 @@
 """Hole patterns: circles of holes and straight rows, found among holes of the same shape and size.
+
+Inputs come from two sources that may both be present:
+  holes      - generic hole finder (ctx.results["holes"]["items"]): any part shape, all feature types
+  bolt_circle - specialist bolt-circle finder (ctx.data["holes"] + ctx.data["off_circle_holes"]): round
+                parts only, bolt holes and off-circle holes measured by the wall-fit method
+
+Both sources produce round holes with x, y, d, and n fields; patterns analyses the merged list so that
+bolt-circle holes and generic holes are considered together. The step runs when either source is available.
+
 Settings in config analysis.patterns."""
 import itertools
 import math
@@ -10,6 +19,67 @@ from ..core import angle_deg, fit_circle
 from ..registry import step
 
 BLUE = (40, 170, 255)
+
+
+def _collect_items(ctx):
+    """Merge hole items from all available sources into one list for pattern analysis.
+
+    bolt_circle holes use integer n (1, 2, …) and off-circle holes use string n ("A1", …).
+    generic holes use string n ("H1", …).
+    To avoid collisions the bolt-circle holes are re-labelled "B<n>" and off-circle holes "A<n>"
+    here so pattern names are unambiguous.  The original labels are preserved in each item's
+    "source_n" field for traceability.
+    """
+    items = []
+
+    # Generic holes from holes.py (always present when holes ran)
+    for h in ctx.results.get("holes", {}).get("items", []):
+        items.append(h)
+
+    # Bolt-circle holes from bolt_circle.py – only when that step ran and succeeded
+    bc = ctx.results.get("bolt_circle", {})
+    if bc.get("ok"):
+        # Bolt-circle holes store their data in ctx.data, not ctx.results, because bolt_circle.py
+        # predates the holes/patterns split.  Read from ctx.data directly.
+        for h in ctx.data.get("holes", []):
+            # Avoid double-counting: a round hole that holes.py already found at the same place.
+            # Same-place test: centre within 0.5 x the smaller diameter of an existing item.
+            already = any(
+                math.hypot(h["x"] - q["x"], h["y"] - q["y"])
+                <= 0.5 * min(h["d"], q["d"])
+                for q in items
+            )
+            if already:
+                continue
+            # Normalise the schema to match holes.py items (add fields that patterns needs).
+            item = dict(h)
+            item.setdefault("shape", "round")
+            item.setdefault("eq_d", h["d"])
+            item.setdefault("length", h["d"])
+            item.setdefault("width", h["d"])
+            # Re-label to avoid clashing with H# labels from holes.py
+            item["source_n"] = h["n"]
+            item["n"] = f"B{h['n']}"
+            items.append(item)
+
+        for h in ctx.data.get("off_circle_holes", []):
+            already = any(
+                math.hypot(h["x"] - q["x"], h["y"] - q["y"])
+                <= 0.5 * min(h["d"], q["d"])
+                for q in items
+            )
+            if already:
+                continue
+            item = dict(h)
+            item.setdefault("shape", "round")
+            item.setdefault("eq_d", h["d"])
+            item.setdefault("length", h["d"])
+            item.setdefault("width", h["d"])
+            item["source_n"] = h["n"]
+            # off_circle holes already use "A<n>" labels – keep them
+            items.append(item)
+
+    return items
 
 
 def _groups(items):
@@ -105,10 +175,21 @@ def _linear(ctx, g):
     return out
 
 
-@step("patterns", needs=("holes",))
+def _has_holes(ctx):
+    """patterns runs when at least one hole source produced results."""
+    return bool(ctx.results.get("holes", {}).get("items")) \
+        or bool(ctx.data.get("holes")) \
+        or bool(ctx.data.get("off_circle_holes"))
+
+
+@step("patterns", needs=("outline",), when=_has_holes)
 def patterns(ctx):
-    """Circular patterns first, then straight rows, within each same-shape/same-size group."""
-    items = ctx.results["holes"]["items"]
+    """Circular patterns first, then straight rows, within each same-shape/same-size group.
+
+    Analyses holes from both the generic hole finder (holes.py) and the bolt-circle finder
+    (bolt_circle.py) so that every detected hole contributes to pattern analysis regardless of
+    which specialist step found it."""
+    items = _collect_items(ctx)
     found = []
     for g in _groups(items):
         c = _circular(ctx, g) or (_rect4(ctx, g) if len(g) == 4 else None)

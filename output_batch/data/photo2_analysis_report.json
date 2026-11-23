@@ -1,0 +1,815 @@
+{
+ "image": "C:\\Users\\User\\Desktop\\projects\\pqc_x\\PRODUCT_QUALITY_CHECK\\photo2.jpeg",
+ "image_size_wh": [
+  1200,
+  1600
+ ],
+ "laplacian_var": 37.26219322047499,
+ "profile": "inspect",
+ "part": {
+  "segmentation": "edges",
+  "polarity": "dark part on light background",
+  "otsu_threshold": 83.0,
+  "mec_x": 624.6019897460938,
+  "mec_y": 772.3882446289062,
+  "mec_r": 251.49842834472656,
+  "mec_d": 502.9968566894531,
+  "fill_of_mec": 0.9574590773529001,
+  "touches_frame": false,
+  "area_px2": 190257.0,
+  "centroid": [
+   616.6188918147558,
+   772.076906500155
+  ],
+  "through_openings": 3
+ },
+ "detection_scale": 0.9940419971822938,
+ "outline": {
+  "shape": "round",
+  "area_px2": 190257.0,
+  "perimeter_px": 1715.0134041309357,
+  "circularity": 0.8128594723849829,
+  "solidity": 0.9702682992753217,
+  "min_rect_length": 501.612548828125,
+  "min_rect_width": 487.54278564453125,
+  "min_rect_angle_deg": 1.4144229137261457,
+  "rect_fill": 0.77796402994412,
+  "corners": 16,
+  "analysed_as": "round",
+  "circle_fit": {
+   "x": 624.6772894235985,
+   "y": 772.4325404324534,
+   "d": 501.2250226990554,
+   "std": 0.4656805657585992,
+   "inlier_fraction": 0.7984972677595629
+  },
+  "cut_ins": []
+ },
+ "bore_hough_trials": {
+  "param1=100,param2=20": [
+   624.7,
+   773.2,
+   67.4
+  ],
+  "param1=100,param2=30": [
+   624.7,
+   773.2,
+   67.4
+  ],
+  "param1=100,param2=40": [
+   624.7,
+   773.2,
+   67.4
+  ],
+  "param1=100,param2=50": [
+   624.7,
+   773.2,
+   67.4
+  ]
+ },
+ "bore": {
+  "x": 623.9447960432698,
+  "y": 773.3472165187532,
+  "r": 68.25012286415355,
+  "d": 136.5002457283071,
+  "std": 0.24780094425110968,
+  "rays": 218,
+  "of": 360,
+  "ellipse": [
+   [
+    623.9179077148438,
+    773.3395385742188
+   ],
+   [
+    136.3902130126953,
+    136.6678009033203
+   ],
+   85.98925018310547
+  ],
+  "hough": [
+   624.7,
+   773.2,
+   67.4
+  ]
+ },
+ "levels": {
+  "part": 46.0,
+  "background": 132.0
+ },
+ "outer_rim_fit": {
+  "x": 624.7342467121937,
+  "y": 772.4859172890547,
+  "r": 249.22023024405394,
+  "d": 498.4404604881079,
+  "std": 0.5034069136464774,
+  "rays": 614,
+  "of": 720,
+  "offset_from_origin": 1.1683615543758752
+ },
+ "notch_tolerance_px": 3.738303453660809,
+ "coarse_pass": {
+  "radius_range": [
+   5.0,
+   22.6
+  ],
+  "param1": 100,
+  "param2": 14,
+  "dominant_R": 226.72695922851562,
+  "typical_hole_r": 10.261136054992676
+ },
+ "hole_search": {
+  "radius_range": [
+   6.2,
+   15.4
+  ],
+  "minDist": 15.4,
+  "param1": 100,
+  "param2_values": [
+   10,
+   12,
+   14,
+   16,
+   18,
+   20,
+   24,
+   28
+  ],
+  "param2_base": 14,
+  "prescribed_width_scaled_range": [
+   6,
+   16
+  ]
+ },
+ "dominant_radius_hough": 226.72695922851562,
+ "hole_levels": {
+  "core_median": 2.0,
+  "surface_minus_core_median": 44.0,
+  "holes_are": "darker than surface"
+ },
+ "numbering": "pitch is uniform, so hole 1 is the hole nearest 12 o'clock",
+ "hole_types": {
+  "standard": [
+   1,
+   2,
+   3
+  ]
+ },
+ "type_group_spacing": {},
+ "param2_table": [
+  {
+   "param2": 10,
+   "raw": 24,
+   "within_3pct": 3,
+   "distinct_final_holes": 3,
+   "within_3pct_but_rejected": 0
+  },
+  {
+   "param2": 12,
+   "raw": 8,
+   "within_3pct": 3,
+   "distinct_final_holes": 3,
+   "within_3pct_but_rejected": 0
+  },
+  {
+   "param2": 14,
+   "raw": 5,
+   "within_3pct": 3,
+   "distinct_final_holes": 3,
+   "within_3pct_but_rejected": 0
+  },
+  {
+   "param2": 16,
+   "raw": 3,
+   "within_3pct": 3,
+   "distinct_final_holes": 3,
+   "within_3pct_but_rejected": 0
+  },
+  {
+   "param2": 18,
+   "raw": 3,
+   "within_3pct": 3,
+   "distinct_final_holes": 3,
+   "within_3pct_but_rejected": 0
+  },
+  {
+   "param2": 20,
+   "raw": 3,
+   "within_3pct": 3,
+   "distinct_final_holes": 3,
+   "within_3pct_but_rejected": 0
+  },
+  {
+   "param2": 24,
+   "raw": 2,
+   "within_3pct": 2,
+   "distinct_final_holes": 2,
+   "within_3pct_but_rejected": 0
+  },
+  {
+   "param2": 28,
+   "raw": 2,
+   "within_3pct": 2,
+   "distinct_final_holes": 2,
+   "within_3pct_but_rejected": 0
+  }
+ ],
+ "rejected_candidates": [
+  {
+   "x": 669.4888305664062,
+   "y": 901.8733520507812,
+   "r": 9.657540321350098,
+   "R": 136.35698220275302,
+   "ang": 70.48790233009535,
+   "dev_pct": -39.85850528462286,
+   "core": 60.0,
+   "surface": 59.0,
+   "max_param2": 14,
+   "reason": "off bolt circle by -39.9% (limit 3%); core gray 60 vs typical hole core 2, local surface 59: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 830.4478149414062,
+   "y": 833.4658203125,
+   "r": 12.172524452209473,
+   "R": 215.07613381347923,
+   "ang": 16.23170398009146,
+   "dev_pct": -5.138703158495437,
+   "core": 126.0,
+   "surface": 102.0,
+   "max_param2": 14,
+   "reason": "off bolt circle by -5.1% (limit 3%); core gray 126 vs typical hole core 2, local surface 102: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 836.4837646484375,
+   "y": 723.8125,
+   "r": 15.492302894592285,
+   "R": 218.2349681337565,
+   "ang": 346.8807325054546,
+   "dev_pct": -3.745470377080365,
+   "core": 123.5,
+   "surface": 118.0,
+   "max_param2": 12,
+   "reason": "off bolt circle by -3.7% (limit 3%); core gray 124 vs typical hole core 2, local surface 118: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 578.9494018554688,
+   "y": 807.3099975585938,
+   "r": 15.492302894592285,
+   "R": 56.374249388136015,
+   "ang": 142.9542859795338,
+   "dev_pct": -75.13562146294345,
+   "core": 72.0,
+   "surface": 72.0,
+   "max_param2": 12,
+   "reason": "off bolt circle by -75.1% (limit 3%); core gray 72 vs typical hole core 2, local surface 72: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 510.54180908203125,
+   "y": 669.4888305664062,
+   "r": 13.178518295288086,
+   "R": 153.77516634475634,
+   "ang": 222.4845323711392,
+   "dev_pct": -32.17605578621639,
+   "core": 54.0,
+   "surface": 44.0,
+   "max_param2": 12,
+   "reason": "off bolt circle by -32.2% (limit 3%); core gray 54 vs typical hole core 2, local surface 44: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 562.853515625,
+   "y": 649.3689575195312,
+   "r": 13.178518295288086,
+   "R": 138.21271015222086,
+   "ang": 243.76785774091962,
+   "dev_pct": -39.04001949193974,
+   "core": 59.5,
+   "surface": 53.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -39.0% (limit 3%); core gray 60 vs typical hole core 2, local surface 53: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 660.4348754882812,
+   "y": 815.35791015625,
+   "r": 15.492302894592285,
+   "R": 55.64552343007357,
+   "ang": 49.02273722198461,
+   "dev_pct": -75.45703271484841,
+   "core": 63.0,
+   "surface": 59.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -75.5% (limit 3%); core gray 63 vs typical hole core 2, local surface 59: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 542.733642578125,
+   "y": 879.7415161132812,
+   "r": 9.657540321350098,
+   "R": 133.84692164315732,
+   "ang": 127.35462489155617,
+   "dev_pct": -40.96559046237882,
+   "core": 42.0,
+   "surface": 33.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -41.0% (limit 3%); core gray 42 vs typical hole core 2, local surface 33: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 695.6446533203125,
+   "y": 659.4288940429688,
+   "r": 9.657540321350098,
+   "R": 134.60406282592328,
+   "ang": 302.1861905941832,
+   "dev_pct": -40.631646415608955,
+   "core": 53.5,
+   "surface": 51.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -40.6% (limit 3%); core gray 54 vs typical hole core 2, local surface 51: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 681.5607299804688,
+   "y": 877.7295532226562,
+   "r": 12.071925163269043,
+   "R": 119.22779902029002,
+   "ang": 61.10261331821024,
+   "dev_pct": -47.41348826536256,
+   "core": 65.0,
+   "surface": 59.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -47.4% (limit 3%); core gray 65 vs typical hole core 2, local surface 59: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 714.758544921875,
+   "y": 649.3689575195312,
+   "r": 9.657540321350098,
+   "R": 153.68066140495532,
+   "ang": 306.222678382087,
+   "dev_pct": -32.217738054669425,
+   "core": 66.5,
+   "surface": 64.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -32.2% (limit 3%); core gray 66 vs typical hole core 2, local surface 64: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 490.42193603515625,
+   "y": 745.9443359375,
+   "r": 11.870726585388184,
+   "R": 136.30580328400072,
+   "ang": 191.5977656308689,
+   "dev_pct": -39.88107821504385,
+   "core": 46.0,
+   "surface": 45.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -39.9% (limit 3%); core gray 46 vs typical hole core 2, local surface 45: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 524.625732421875,
+   "y": 655.4049072265625,
+   "r": 10.965331077575684,
+   "R": 154.19035222673767,
+   "ang": 229.8993129577818,
+   "dev_pct": -31.992934253870136,
+   "core": 67.0,
+   "surface": 52.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -32.0% (limit 3%); core gray 67 vs typical hole core 2, local surface 52: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 695.6446533203125,
+   "y": 865.6575927734375,
+   "r": 10.965331077575684,
+   "R": 116.88487968009244,
+   "ang": 52.162588276921205,
+   "dev_pct": -48.44685427890141,
+   "core": 63.0,
+   "surface": 59.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -48.4% (limit 3%); core gray 63 vs typical hole core 2, local surface 59: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 565.8714599609375,
+   "y": 874.7115478515625,
+   "r": 11.06593132019043,
+   "R": 116.82140227834569,
+   "ang": 119.8091232525594,
+   "dev_pct": -48.47485156778261,
+   "core": 33.0,
+   "surface": 35.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -48.5% (limit 3%); core gray 33 vs typical hole core 2, local surface 35: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 738.9024047851562,
+   "y": 850.5676879882812,
+   "r": 8.450346946716309,
+   "R": 138.48556972345116,
+   "ang": 33.89044114331329,
+   "dev_pct": -38.91967228128655,
+   "core": 71.0,
+   "surface": 53.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -38.9% (limit 3%); core gray 71 vs typical hole core 2, local surface 53: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 653.3929443359375,
+   "y": 902.87939453125,
+   "r": 8.24914836883545,
+   "R": 132.8374140764872,
+   "ang": 77.19194144401355,
+   "dev_pct": -41.410843012011725,
+   "core": 52.0,
+   "surface": 49.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -41.4% (limit 3%); core gray 52 vs typical hole core 2, local surface 49: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 693.6326904296875,
+   "y": 887.7894897460938,
+   "r": 7.343754291534424,
+   "R": 133.99043445505276,
+   "ang": 58.661306094824575,
+   "dev_pct": -40.902292823499096,
+   "core": 52.5,
+   "surface": 64.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -40.9% (limit 3%); core gray 52 vs typical hole core 2, local surface 64: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 514.5657958984375,
+   "y": 700.6746215820312,
+   "r": 9.456340789794922,
+   "R": 131.32049241272315,
+   "ang": 213.60049459330756,
+   "dev_pct": -42.07989519218724,
+   "core": 49.0,
+   "surface": 50.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -42.1% (limit 3%); core gray 49 vs typical hole core 2, local surface 50: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 528.6497192382812,
+   "y": 678.5427856445312,
+   "r": 7.041955947875977,
+   "R": 134.42109870349142,
+   "ang": 224.85212019226807,
+   "dev_pct": -40.71234441599428,
+   "core": 50.0,
+   "surface": 55.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by -40.7% (limit 3%); core gray 50 vs typical hole core 2, local surface 55: not hole-like (surface mark/edge)"
+  },
+  {
+   "x": 723.8125,
+   "y": 542.733642578125,
+   "r": 6.6395583152771,
+   "R": 251.30893095801167,
+   "ang": 293.4151277417829,
+   "dev_pct": 10.842103565072799,
+   "core": 133.0,
+   "surface": 133.0,
+   "max_param2": 10,
+   "reason": "off bolt circle by 10.8% (limit 3%); core gray 133 vs typical hole core 2, local surface 133: not hole-like (surface mark/edge)"
+  }
+ ],
+ "blob_census": {
+  "count": 3,
+  "matched": 3,
+  "threshold": 15.2,
+  "items": [
+   {
+    "x": 809.929292929293,
+    "y": 642.1111111111111,
+    "area": 297,
+    "R": 227.62501717630448,
+    "circularity": 0.914031606293101,
+    "matches_hole": true
+   },
+   {
+    "x": 418.1885521885522,
+    "y": 678.3333333333334,
+    "area": 297,
+    "R": 226.63466169845822,
+    "circularity": 0.8662329121453779,
+    "matches_hole": true
+   },
+   {
+    "x": 644.2546125461255,
+    "y": 998.0811808118082,
+    "area": 271,
+    "R": 225.64982462490812,
+    "circularity": 0.8810780609062925,
+    "matches_hole": true
+   }
+  ]
+ },
+ "bolt_circle": {
+  "mean_R": 226.7051336602161,
+  "std_R": 0.8432198656389369,
+  "min_R": 225.70864311231728,
+  "max_R": 227.77063950363376,
+  "fit_x": 624.5050013512507,
+  "fit_y": 772.2951224388718,
+  "fit_R": 226.7069198521492,
+  "fit_d": 453.4138397042984,
+  "fit_std": 1.6432899429175263e-11,
+  "offset_from_origin": 1.1919446044223174
+ },
+ "tilt": {
+  "bore_axis_ratio": 0.9979688859497976,
+  "bore_tilt_deg": 3.6523998922503167
+ },
+ "pitch": {
+  "median": 120.01040381340513,
+  "big_gap_threshold": 180.01560572010771,
+  "min": 119.95127310645577,
+  "max": 120.0383230801391,
+  "uniform": true,
+  "big_gaps": []
+ },
+ "holes": [
+  {
+   "x": 810.041767806322,
+   "y": 642.0179306739119,
+   "r": 10.650197232263244,
+   "d": 21.300394464526487,
+   "fit_std": 0.2681702171992955,
+   "rays": 69,
+   "of": 72,
+   "core": 2.0,
+   "surface": 60.0,
+   "blob_d": 21.37973331358283,
+   "ring_dip": 5.3955078125,
+   "ring_dip_at_r": 11.8815336227417,
+   "local_contrast": 58.0,
+   "ring_outer_r": 12.3815336227417,
+   "quality_ok": true,
+   "max_param2": 28,
+   "R": 227.77063950363376,
+   "ang": 324.78924686112686,
+   "n": 1,
+   "type": "standard"
+  },
+  {
+   "x": 644.2931894687025,
+   "y": 998.1367502177384,
+   "r": 9.812055710586906,
+   "d": 19.62411142117381,
+   "fit_std": 0.30516041515316333,
+   "rays": 72,
+   "of": 72,
+   "core": 3.0,
+   "surface": 43.0,
+   "blob_d": 19.544100476116796,
+   "ring_dip": 2.35693359375,
+   "ring_dip_at_r": 11.043392181396484,
+   "local_contrast": 40.0,
+   "ring_outer_r": 11.543392181396484,
+   "quality_ok": true,
+   "max_param2": 20,
+   "R": 225.70864311231728,
+   "ang": 84.82756994126595,
+   "n": 2,
+   "type": "standard"
+  },
+  {
+   "x": 418.1745431810912,
+   "y": 678.3602006457817,
+   "r": 10.249478083814493,
+   "d": 20.498956167628986,
+   "fit_std": 0.21197611640469277,
+   "rays": 72,
+   "of": 72,
+   "core": 2.0,
+   "surface": 46.0,
+   "blob_d": 20.404639941160397,
+   "ring_dip": 2.82421875,
+   "ring_dip_at_r": 11.480813980102539,
+   "local_contrast": 44.0,
+   "ring_outer_r": 11.980813980102539,
+   "quality_ok": true,
+   "max_param2": 28,
+   "R": 226.63611836469718,
+   "ang": 204.77884304772172,
+   "n": 3,
+   "type": "standard"
+  }
+ ],
+ "off_circle_holes": [],
+ "spacing": [
+  {
+   "a": 1,
+   "b": 2,
+   "pitch": 120.0383230801391,
+   "dist": 392.80173733606426,
+   "big": false
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "pitch": 119.95127310645577,
+   "dist": 391.64612069454734,
+   "big": false
+  },
+  {
+   "a": 3,
+   "b": 1,
+   "pitch": 120.01040381340513,
+   "dist": 393.5488309246889,
+   "big": false
+  }
+ ],
+ "notches": [
+  {
+   "start": 343.0,
+   "end": 20.5,
+   "span": 37.5,
+   "mid": 1.75,
+   "max_depth": 48.40502684008883,
+   "name": "N1"
+  }
+ ],
+ "rim_dropouts_at_holes": [],
+ "rings": [
+  {
+   "R": 97.1798095703125,
+   "d": 194.359619140625,
+   "gradient": 0.65,
+   "direction": "lighter outward",
+   "status": "weak edge, unconfirmed"
+  },
+  {
+   "R": 126.1798095703125,
+   "d": 252.359619140625,
+   "gradient": 5.2,
+   "direction": "lighter outward",
+   "fit_x": 624.7347287398209,
+   "fit_y": 773.5496878815511,
+   "fit_d": 255.76845606561622,
+   "fit_std": 2.871281510977549,
+   "rays": 358,
+   "status": "edge found but not a clean circle"
+  },
+  {
+   "R": 143.6798095703125,
+   "d": 287.359619140625,
+   "gradient": -6.03,
+   "direction": "darker outward",
+   "fit_x": 624.6109398772487,
+   "fit_y": 773.3687476221776,
+   "fit_d": 287.2360043830866,
+   "fit_std": 0.8670675894599064,
+   "rays": 293,
+   "status": "confirmed ring"
+  }
+ ],
+ "surface_hole_threshold": {
+  "threshold": 25.0,
+  "spread": 38.0,
+  "polarity": "dark"
+ },
+ "edge_regions": {
+  "gap_px": 1,
+  "kept": 5,
+  "rejected_texture": 16,
+  "not_fitted": 5
+ },
+ "holes_generic": [
+  {
+   "x": 810.0484505834875,
+   "y": 642.0110887471824,
+   "area": 313.0,
+   "eq_d": 19.963065333312567,
+   "length": 20.0,
+   "width": 19.0,
+   "aspect": 1.0526315789473684,
+   "circularity": 0.895227132292922,
+   "solidity": 0.9796557120500783,
+   "axis_deg": 90.0,
+   "shape": "round",
+   "source": "blind/surface hole (darker than surface)",
+   "fit": {
+    "method": "wall fit",
+    "std": 0.2734615601137058,
+    "rays": 69,
+    "of": 72
+   },
+   "d": 21.391130483277717,
+   "inside_vs_around": "darker",
+   "u": 433.17603780300686,
+   "v": 116.50526218227178,
+   "n": "H1",
+   "R": 227.7800445413405,
+   "ang": 324.78880995845157,
+   "contains_origin": false
+  },
+  {
+   "x": 418.175059766555,
+   "y": 678.3624777531284,
+   "area": 302.5,
+   "eq_d": 19.625365277680483,
+   "length": 20.0,
+   "width": 19.0,
+   "aspect": 1.0526315789473684,
+   "circularity": 0.8903234813432858,
+   "solidity": 0.9726688102893891,
+   "axis_deg": 90.0,
+   "shape": "round",
+   "source": "blind/surface hole (darker than surface)",
+   "fit": {
+    "method": "wall fit",
+    "std": 0.21209303432994278,
+    "rays": 72,
+    "of": 72
+   },
+   "d": 20.49577206739316,
+   "inside_vs_around": "darker",
+   "u": 42.31934187903945,
+   "v": 162.51851088250598,
+   "n": "H2",
+   "R": 226.63469497356914,
+   "ang": 204.77837510699987,
+   "contains_origin": false
+  },
+  {
+   "x": 644.2910213085194,
+   "y": 998.1379084505413,
+   "area": 258.5,
+   "eq_d": 18.1420071192258,
+   "length": 19.230182647705078,
+   "width": 17.441329956054688,
+   "aspect": 1.1025640072263754,
+   "circularity": 0.8533386590927158,
+   "solidity": 0.9609665427509294,
+   "axis_deg": 26.565051177078004,
+   "shape": "round",
+   "source": "blind/surface hole (darker than surface)",
+   "fit": {
+    "method": "wall fit",
+    "std": 0.3034780015657418,
+    "rays": 72,
+    "of": 72
+   },
+   "d": 19.651908380270044,
+   "inside_vs_around": "darker",
+   "u": 276.259688302955,
+   "v": 476.6150985252068,
+   "n": "H3",
+   "R": 225.70960117309227,
+   "ang": 84.82814458810478,
+   "contains_origin": false
+  }
+ ],
+ "patterns": [
+  {
+   "kind": "circular",
+   "holes": [
+    "H3",
+    "H2",
+    "H1"
+   ],
+   "count": 3,
+   "cx": 624.5110306647441,
+   "cy": 772.2925228007905,
+   "d": 453.4198330428826,
+   "fit_std": 1.6087239893503387e-11,
+   "pitches_deg": [
+    119.48169491017946,
+    120.44769017667971,
+    120.07061491314084
+   ],
+   "mean_pitch_deg": 120.0,
+   "uniform": true,
+   "centre_offset_from_origin": 1.1970799828190648,
+   "name": "PC1"
+  }
+ ],
+ "pockets": [],
+ "ratios": {
+  "outer_over_bolt": 1.099291262014486,
+  "bolt_over_bore": 3.3217510387884484,
+  "outer_over_bore": 3.651571891527683,
+  "ring_287_over_bore": 2.1042892842464695
+ },
+ "dims_px": {
+  "outer": 498.4404604881079,
+  "bore": 136.5002457283071,
+  "bolt": 453.4198330428826,
+  "hole": 20.49577206739316,
+  "ring_287": 287.2360043830866
+ },
+ "steps_run": [
+  "part",
+  "outline",
+  "bore",
+  "round_rim",
+  "bolt_circle",
+  "rim_notches",
+  "rings",
+  "holes",
+  "patterns",
+  "pockets",
+  "scale",
+  "ratios"
+ ],
+ "steps_skipped": [],
+ "warnings": [],
+ "notes": [
+  "3 light region(s) inside the outline were not counted as openings (thin or not background-coloured: highlights or reflections)."
+ ]
+}

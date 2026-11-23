@@ -1,0 +1,14 @@
+"# drawing check; nominal and measured positions in drawing mm (y down), tolerances diameter/position"
+feature,kind,prominence_rank,nominal_x,nominal_y,nominal_size,measured_x,measured_y,measured_size,position_dev_mm,size_dev_mm,tol_mm,status,note,dimension_check,detected
+outline,outline,1,,,106.01 x 106.01,,,,,rms 0.146,0.5,DETECTED,"within +-0.26 mm (photo uncertainty) of the tolerance limit; edge deviation +0.219 / -0.631 mm (+ = part larger than drawing); 0% of the edge outside tolerance, 1% not visible",CAN'T VERIFY,yes
+H1,hole,2,148.500,-105.000,29.000,148.748,-104.975,29.005,0.249,+0.005,0.5/0.5,DETECTED,within +-0.35 mm (photo uncertainty) of the tolerance limit,CAN'T VERIFY,yes
+H2,hole,3,182.441,-138.941,4.500,182.645,-138.891,4.164,0.210,-0.336,0.5/0.5,DETECTED,within +-0.35 mm (photo uncertainty) of the tolerance limit,CAN'T VERIFY,yes
+H3,hole,4,102.136,-117.423,4.500,101.990,-117.451,4.525,0.148,+0.025,0.5/0.5,OK,,OK,yes
+H4,hole,5,160.923,-58.636,4.500,161.263,-58.474,4.367,0.376,-0.133,0.5/0.5,DETECTED,within +-0.35 mm (photo uncertainty) of the tolerance limit,CAN'T VERIFY,yes
+H5,hole,6,152.161,-146.840,4.000,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (14 gray levels contrast there),MISSING,
+RING1,ring,,152.161,-146.840,6.500,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+RING2,ring,,148.500,-105.000,54.014,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+RING3,ring,,148.500,-105.000,55.000,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+RING4,ring,,148.500,-105.000,59.600,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+RING5,ring,,148.500,-105.000,60.014,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+

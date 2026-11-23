@@ -2,7 +2,7 @@
 
 There is one analysis pipeline for every part. Each step declares when it applies (`when`), from what earlier steps
 measured, e.g. the bore and bolt-circle steps run only when the outline step found a round part, the generic hole
-finder runs on everything else (and on round parts without a bolt circle). Nothing chooses a pipeline per part type.
+finder runs on every part, and patterns analyses holes from all sources that ran.
 
 Add a detector by creating a module in partvision/steps/ with a function decorated by @step(...). It is imported
 automatically. Add it to a pipeline below, or run any list with --steps.

@@ -1,0 +1,26 @@
+"# drawing check; nominal and measured positions in drawing mm (y down), tolerances diameter/position"
+feature,kind,prominence_rank,nominal_x,nominal_y,nominal_size,measured_x,measured_y,measured_size,position_dev_mm,size_dev_mm,tol_mm,status,note,dimension_check,detected
+outline,outline,1,,,106.01 x 106.01,,,,,rms 1.118,0.5,DEVIATES,"edge visible on only 45% of the outline; edge deviation +2.830 / -2.907 mm (+ = part larger than drawing); 26% of the edge outside tolerance, 55% not visible",UNCERTAIN,no
+W1,contour (irregular),2,148.621,-104.926,83.14 x 83.03,,,,,,0.5/0.5,DEVIATES,"edge visible on only 44% of the contour; inner contour (recess/step edge): edge found on 44%, median offset +0.64 mm",UNCERTAIN,no
+H1,hole,3,148.500,-105.000,29.000,,,,,,0.5/0.5,MISSING,no edge and no contrast at the expected place (10 gray levels),MISSING,
+H2,pin/boss? (round edge),4,171.084,-147.355,5.200,170.987,-147.423,5.153,0.119,-0.047,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H3,hole,5,184.726,-136.491,5.200,184.981,-136.745,7.771,0.360,+2.571,0.5/0.5,DETECTED,,DEVIATES,yes
+H4,pin/boss? (round edge),6,195.451,-114.980,5.200,195.336,-114.958,4.920,0.117,-0.280,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H5,hole,7,190.069,-81.000,5.200,189.076,-81.634,4.000,1.179,-1.200,0.5/0.5,DETECTED,weak wall fit; ,UNCERTAIN,yes
+H6,pin/boss? (round edge),8,172.500,-63.431,5.200,172.506,-63.797,5.225,0.367,+0.025,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H7,pin/boss? (round edge),9,160.923,-58.636,5.200,160.643,-58.654,5.212,0.281,+0.012,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H8,pin/boss? (round edge),10,137.702,-58.230,5.200,137.874,-57.978,5.066,0.305,-0.134,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H9,pin/boss? (round edge),11,106.119,-82.465,5.200,106.076,-82.650,5.010,0.189,-0.190,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H10,pin/boss? (round edge),12,100.500,-105.000,5.200,100.416,-104.759,5.378,0.255,+0.178,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H11,pin/boss? (round edge),13,102.849,-119.833,5.200,103.006,-119.882,5.328,0.164,+0.128,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H12,pin/boss? (round edge),14,114.559,-138.941,5.200,114.673,-138.826,5.225,0.162,+0.025,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H13,pin/boss? (round edge),15,144.317,-152.817,5.200,144.507,-152.573,5.187,0.310,-0.013,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H14,pin/boss? (round edge),16,102.136,-92.577,4.500,102.018,-92.705,4.495,0.174,-0.005,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H15,hole,17,182.441,-71.059,4.500,182.613,-70.828,2.257,0.288,-2.243,0.5/0.5,DETECTED,,DEVIATES,yes
+H16,pin/boss? (round edge),18,160.923,-151.364,4.500,160.799,-151.400,4.691,0.129,+0.191,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H17,pin/boss? (round edge),19,152.161,-63.160,4.000,152.029,-63.148,4.021,0.132,+0.021,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H18,pin/boss? (round edge),20,148.500,-57.000,3.300,148.425,-57.026,3.227,0.079,-0.073,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H19,pin/boss? (round edge),21,106.931,-129.000,3.300,107.014,-129.026,3.268,0.087,-0.032,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+H20,pin/boss? (round edge),22,190.069,-129.000,3.300,190.201,-129.086,3.313,0.158,+0.013,0.5/0.5,DETECTED,"within +-0.58 mm (photo uncertainty) of the tolerance limit; round edge found but not a dark hole: pin, boss, plug or spot face",CAN'T VERIFY,yes
+RING1,ring,,148.500,-105.000,58.000,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+

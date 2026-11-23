@@ -1,0 +1,159 @@
+{
+ "image": "C:\\Users\\User\\Desktop\\projects\\pqc_x\\PRODUCT_QUALITY_CHECK\\photo1.jpeg",
+ "image_size_wh": [
+  727,
+  947
+ ],
+ "laplacian_var": 69.31188039366022,
+ "profile": "drawing",
+ "part": {
+  "segmentation": "edges",
+  "polarity": "dark part on light background",
+  "otsu_threshold": 87.0,
+  "mec_x": 367.7081298828125,
+  "mec_y": 468.775634765625,
+  "mec_r": 253.48085021972656,
+  "mec_d": 506.9617004394531,
+  "fill_of_mec": 0.9549686751894273,
+  "touches_frame": false,
+  "area_px2": 192765.5,
+  "centroid": [
+   374.4893449986296,
+   464.6399303817332
+  ],
+  "through_openings": 7
+ },
+ "detection_scale": 0.986267798073467,
+ "drawing": {
+  "file": "dxf_files\\box_rear.dxf",
+  "info": {
+   "units": 4,
+   "mm_per_unit": 1.0,
+   "source": "dxf",
+   "skipped": {}
+  },
+  "registration": {
+   "coarse_iou": 0.7472731101284481,
+   "mirror": true,
+   "angle_deg": 152.8877089678661,
+   "px_per_mm": 7.422712512455012,
+   "outline_rms_px": 9.506211280822754,
+   "outline_within_2px": 0.07375,
+   "start": "outline overlap search",
+   "scale_outline": 7.422712512455012,
+   "outline_sigma_px": 2.477342624135762,
+   "feature_sigma_px": 1.0,
+   "n_datum": 0,
+   "score": 0.073125,
+   "hole_agreement": 0.0,
+   "edge_found": 0.24375,
+   "feature_agreement": 0.3212627817569831,
+   "candidates": [
+    {
+     "start": "outline overlap search",
+     "mirrored": true,
+     "angle_deg": 152.89,
+     "px_per_mm": 7.4227,
+     "score": 0.639,
+     "hole_agreement": 0.0,
+     "feature_agreement": 0.321
+    },
+    {
+     "start": "outline overlap search",
+     "mirrored": false,
+     "angle_deg": 349.9,
+     "px_per_mm": 7.6478,
+     "score": 0.601,
+     "hole_agreement": 0.0,
+     "feature_agreement": 0.235
+    }
+   ],
+   "transform_px_from_mm": {
+    "A": [
+     [
+      -6.607068201553953,
+      3.3827963022580625
+     ],
+     [
+      3.3827963022580625,
+      6.607068201553953
+     ]
+    ],
+    "t": [
+     1687.9533556219917,
+     659.8648633207556
+    ],
+    "usage": "x_px = A @ [x_mm, y_mm] + t  (drawing y down)"
+   },
+   "mm_per_px": 0.13472163960574254,
+   "scale_source": "fitted to the drawing",
+   "outline_p95_px_joint": 17.117652893066406,
+   "outline_p95_px_own": 17.117652893066406,
+   "outline_own_scale": 7.349315121226563,
+   "outline_alignment": "joint with holes/openings",
+   "outline_rms_mm": 1.2806923701910473,
+   "outline_edge_found": 0.585,
+   "uncertainty_edge_mm": 1.2877588544613552,
+   "uncertainty_hole_position_mm": 1.2877588544613552,
+   "uncertainty_hole_size_mm": 0.13472163960574254,
+   "hole_centre_rms_px": 9.506211280822754,
+   "detection_tolerance": {
+    "position_mm": "max(1.0, 0.5 x nominal size)",
+    "size_mm": "max(1.5, 0.5 x nominal size)"
+   },
+   "features_inside_recess": []
+  },
+  "outline_size_mm": [
+   49.22500000000001,
+   82.55
+  ],
+  "results": [
+   {
+    "id": "outline",
+    "status": "DEVIATES",
+    "dimension_check": "UNCERTAIN",
+    "detected": false,
+    "rms_mm": 0.9814648628234863,
+    "max_excess_mm": 2.3061182498931885,
+    "max_shortfall_mm": -2.4091391563415527,
+    "fraction_out": 0.385
+   },
+   {
+    "id": "W1",
+    "kind": "opening",
+    "status": "DEVIATES",
+    "dimension_check": "DEVIATES",
+    "detected": false,
+    "note": "overlap with drawing 32%; L +16.52 W +13.21 mm (brightness region)"
+   }
+  ],
+  "status_counts": {
+   "DEVIATES": 2
+  },
+  "detected": {
+   "found": 0,
+   "checked": 2
+  },
+  "dimension_check_counts": {
+   "UNCERTAIN": 1,
+   "DEVIATES": 1
+  }
+ },
+ "steps_run": [
+  "part",
+  "drawing_load",
+  "drawing_align",
+  "drawing_outline",
+  "drawing_features",
+  "drawing_report"
+ ],
+ "steps_skipped": [],
+ "warnings": [
+  "Two different alignments fit almost equally well (see registration.candidates in the report); check the overlay, or force the orientation with --mirror yes/no.",
+  "The photo outline overlaps the drawing only 75%: wrong drawing, the other face, a damaged part, or the outline was not separated cleanly (reflections). Check the image."
+ ],
+ "notes": [
+  "The photo matches the MIRROR image of the drawing view: it probably shows the other face.",
+  "Scale comes from fitting the drawing, so a part that is uniformly too big or too small cannot be detected. For absolute size, calibrate the camera once and pass --mm-per-px."
+ ]
+}

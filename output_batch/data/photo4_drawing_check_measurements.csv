@@ -1,0 +1,26 @@
+"# drawing check; nominal and measured positions in drawing mm (y down), tolerances diameter/position"
+feature,kind,prominence_rank,nominal_x,nominal_y,nominal_size,measured_x,measured_y,measured_size,position_dev_mm,size_dev_mm,tol_mm,status,note,dimension_check,detected
+outline,outline,1,,,106.01 x 106.01,,,,,rms 0.428,0.5,DETECTED,"within +-0.41 mm (photo uncertainty) of the tolerance limit; edge deviation +0.290 / -2.970 mm (+ = part larger than drawing); 3% of the edge outside tolerance, 1% not visible",CAN'T VERIFY,yes
+W1,contour (irregular),2,148.621,-104.926,83.14 x 83.03,,,,,,0.5/0.5,DETECTED,"within +-0.41 mm (photo uncertainty) of the tolerance limit; inner contour (recess/step edge): edge found on 96%, median offset -0.03 mm",CAN'T VERIFY,yes
+H1,hole,3,148.500,-105.000,29.000,148.482,-105.110,29.050,0.111,+0.050,0.5/0.5,OK,,OK,yes
+H2,hole,4,171.084,-147.355,5.200,171.037,-147.338,4.938,0.050,-0.262,0.5/0.5,OK,,OK,yes
+H3,hole,5,184.726,-136.491,5.200,184.693,-136.483,4.952,0.034,-0.248,0.5/0.5,OK,,OK,yes
+H4,hole,6,195.451,-114.980,5.200,195.415,-114.965,5.048,0.038,-0.152,0.5/0.5,OK,,OK,yes
+H5,hole,7,190.069,-81.000,5.200,190.031,-81.029,5.170,0.048,-0.030,0.5/0.5,OK,,OK,yes
+H6,hole,8,172.500,-63.431,5.200,172.454,-63.502,5.127,0.084,-0.073,0.5/0.5,OK,,OK,yes
+H7,hole,9,160.923,-58.636,5.200,160.862,-58.721,5.239,0.105,+0.039,0.5/0.5,OK,,OK,yes
+H8,hole,10,137.702,-58.230,5.200,137.696,-58.406,5.093,0.177,-0.107,0.5/0.5,OK,,OK,yes
+H9,hole,11,106.119,-82.465,5.200,106.270,-82.676,5.094,0.260,-0.106,0.5/0.5,OK,,OK,yes
+H10,hole,12,100.500,-105.000,5.200,100.609,-105.137,5.152,0.176,-0.048,0.5/0.5,OK,,OK,yes
+H11,hole,13,102.849,-119.833,5.200,102.878,-119.907,5.136,0.079,-0.064,0.5/0.5,OK,,OK,yes
+H12,hole,14,114.559,-138.941,5.200,114.638,-138.934,5.104,0.079,-0.096,0.5/0.5,OK,,OK,yes
+H13,hole,15,144.317,-152.817,5.200,144.321,-152.809,5.127,0.009,-0.073,0.5/0.5,OK,,OK,yes
+H14,hole,16,102.136,-92.577,4.500,102.053,-92.564,5.537,0.083,+1.037,0.5/0.5,DETECTED,,DEVIATES,yes
+H15,hole,17,182.441,-71.059,4.500,182.488,-71.118,5.695,0.075,+1.195,0.5/0.5,DETECTED,,DEVIATES,yes
+H16,hole,18,160.923,-151.364,4.500,160.880,-151.421,5.365,0.071,+0.865,0.5/0.5,DETECTED,,DEVIATES,yes
+H17,hole,19,152.161,-63.160,4.000,,,,,,0.5/0.5,MISSING,no round hole within 1.25 diameters of the expected place (14 gray levels contrast there),MISSING,
+H18,hole,20,148.500,-57.000,3.300,148.494,-57.117,4.408,0.118,+1.108,0.5/0.5,DETECTED,,DEVIATES,yes
+H19,hole,21,106.931,-129.000,3.300,107.047,-128.961,4.259,0.122,+0.959,0.5/0.5,DETECTED,,DEVIATES,yes
+H20,hole,22,190.069,-129.000,3.300,189.973,-128.991,4.009,0.097,+0.709,0.5/0.5,DETECTED,within +-0.21 mm (photo uncertainty) of the tolerance limit,CAN'T VERIFY,yes
+RING1,ring,,148.500,-105.000,58.000,,,,,,,NOT MEASURED,concentric ring (counterbore/chamfer/boss edge),,
+

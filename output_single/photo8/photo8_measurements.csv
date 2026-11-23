@@ -1,0 +1,79 @@
+# per-hole table; angles clockwise on screen about the bore centre; group off circle = not on the bolt circle
+hole,group,angle_deg,radius_from_centre_px,diameter_px,x_px,y_px,type,ring_outer_diameter_px
+1,bolt circle,44.02,417.13,46.21,944.09,1193.77,standard,
+2,bolt circle,93.07,423.79,44.66,621.47,1327.05,standard,
+3,bolt circle,106.06,424.43,40.05,526.76,1311.75,standard,
+4,bolt circle,139.04,424.39,45.35,323.67,1182.07,standard,
+5,bolt circle,151.16,419.62,29.38,276.61,1106.32,small,
+6,bolt circle,166.07,422.28,46.98,234.30,1005.55,standard,
+7,bolt circle,206.18,416.61,45.48,270.29,720.07,standard,
+8,bolt circle,226.21,414.24,41.24,357.48,604.86,standard,
+9,bolt circle,239.28,412.53,45.07,433.44,549.22,standard,
+10,bolt circle,260.19,409.77,43.42,574.35,500.10,standard,
+11,bolt circle,271.14,406.54,26.96,652.23,497.42,small,
+12,bolt circle,289.12,408.14,43.48,777.85,518.25,standard,
+13,bolt circle,330.98,408.81,43.51,1001.63,705.54,standard,
+14,bolt circle,345.93,409.79,39.09,1041.66,804.28,small,
+15,bolt circle,0.95,411.38,44.07,1055.48,910.72,standard,
+16,bolt circle,16.01,413.40,45.06,1041.53,1017.88,standard,
+17,bolt circle,30.82,412.65,29.40,998.52,1115.32,small,
+A1,off circle,121.05,425.31,45.53,424.81,1268.26,,
+
+# neighbour-spacing table; big_gap means pitch > 1.5 x median pitch (22.53 deg)
+from_hole,to_hole,pitch_deg,centre_distance_px,big_gap
+1,2,49.04,349.07,yes
+2,3,12.99,95.94,no
+3,4,32.98,240.96,yes
+4,5,12.11,89.18,no
+5,6,14.91,109.29,no
+6,7,40.11,287.74,yes
+7,8,20.03,144.49,no
+8,9,13.08,94.16,no
+9,10,20.91,149.22,no
+10,11,10.95,77.93,no
+11,12,17.98,127.33,no
+12,13,41.86,291.82,yes
+13,14,14.96,106.55,no
+14,15,15.02,107.33,no
+15,16,15.06,108.07,no
+16,17,14.82,106.52,no
+17,1,13.20,95.48,no
+
+"# holes and openings; u/v = position along the part's long/short axis from frame origin 0; diameter = fitted for round features, else area-equivalent; length/width fitted for rectangles"
+hole,shape,source,x_px,y_px,u_px,v_px,diameter_px,length_px,width_px,axis_deg,circularity,measured_by,inside_vs_around
+H1,round,closed sharp edge,433.44,549.21,404.51,46.62,45.13,42.74,40.58,48.0,0.813,wall fit,darker
+H2,round,blind/surface hole (darker than surface),574.35,500.09,553.61,52.80,43.52,43.00,42.00,0.0,0.896,wall fit,darker
+H3,round,closed sharp edge,357.57,604.92,313.47,70.51,40.83,38.01,36.22,63.4,0.722,wall fit,darker
+H4,round,blind/surface hole (darker than surface),270.29,720.07,189.94,145.47,45.48,46.67,43.84,135.0,0.850,wall fit,darker
+H5,round,blind/surface hole (darker than surface),777.82,518.29,736.11,144.58,43.54,44.00,43.00,90.0,0.840,wall fit,darker
+H6,round,opening (background visible),513.11,763.37,399.80,275.07,127.84,121.72,119.53,59.5,0.488,wall fit,brighter
+H7,round,blind/surface hole (darker than surface),234.30,1005.55,51.44,397.68,46.98,47.00,45.00,90.0,0.880,wall fit,darker
+H8,round,blind/surface hole (darker than surface),1001.58,705.57,875.27,401.05,43.50,45.00,42.00,90.0,0.896,wall fit,darker
+H9,round,closed sharp edge,644.13,903.90,469.92,453.95,254.04,220.00,219.00,90.0,0.830,edge fit,darker
+H10,round,closed sharp edge,276.59,1106.31,53.69,506.93,29.42,35.14,30.08,157.6,0.448,wall fit,darker
+H11,round,blind/surface hole (darker than surface),1041.66,804.28,876.22,507.58,39.09,40.00,37.00,90.0,0.869,wall fit,darker
+H12,round,blind/surface hole (darker than surface),323.66,1182.05,69.59,594.68,45.48,44.00,42.00,90.0,0.878,wall fit,darker
+H13,round,blind/surface hole (darker than surface),1055.48,910.70,849.92,611.62,44.18,45.00,43.00,90.0,0.876,wall fit,darker
+H14,round,blind/surface hole (darker than surface),424.82,1268.24,131.94,712.04,45.59,43.00,42.00,90.0,0.867,wall fit,darker
+H15,round,blind/surface hole (darker than surface),1041.57,1017.90,797.54,706.19,44.82,44.00,43.00,90.0,0.874,wall fit,darker
+H16,round,blind/surface hole (darker than surface),526.76,1311.75,210.72,790.01,40.04,40.00,37.00,90.0,0.872,wall fit,darker
+H17,round,blind/surface hole (darker than surface),998.50,1115.32,721.65,780.93,29.33,34.00,30.00,0.0,0.794,wall fit,darker
+H18,round,closed sharp edge,621.47,1327.06,293.16,839.09,44.66,43.00,41.00,90.0,0.847,wall fit,darker
+H19,round,blind/surface hole (darker than surface),944.09,1193.77,642.19,833.85,46.09,46.85,41.54,128.7,0.838,wall fit,darker
+
+# hole patterns (holes of the same shape and size)
+pattern,kind,holes,count,circle_diameter_px,mean_spacing_px,mean_pitch_deg,rect_long_side_px,rect_short_side_px,spread,uniform
+PC1,circular,H17 H10 B11,3,825.96,,120.00,,,3.79 deg,no
+PC2,circular,H15 H19 H18 H16 H14 H12 H7 H4 H3 H1 H2 H5 H8 H11 H13,15,832.32,,24.00,,,36.63 deg,no
+
+# features
+feature,size_px,angle_start_deg,angle_end_deg,span_deg,note
+bore,254.06,,,,edge fit
+outer rim,919.42,,,,rim fit; enclosing circle 942.90
+bolt circle,831.11,,,,17 holes
+notch N1,,50.0,87.5,37.5,max depth 48.8 px
+ring/step,500.26,,,,"confirmed ring, darker outward"
+ring/step,586.25,,,,"confirmed ring, lighter outward"
+ring/step,645.15,,,,"weak edge, unconfirmed, darker outward"
+ring/step,721.33,,,,"confirmed ring, lighter outward"
+

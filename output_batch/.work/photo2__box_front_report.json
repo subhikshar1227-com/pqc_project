@@ -1,0 +1,234 @@
+{
+ "image": "C:\\Users\\User\\Desktop\\projects\\pqc_x\\PRODUCT_QUALITY_CHECK\\photo2.jpeg",
+ "image_size_wh": [
+  1200,
+  1600
+ ],
+ "laplacian_var": 37.26219322047499,
+ "profile": "drawing",
+ "part": {
+  "segmentation": "edges",
+  "polarity": "dark part on light background",
+  "otsu_threshold": 83.0,
+  "mec_x": 624.6019897460938,
+  "mec_y": 772.3882446289062,
+  "mec_r": 251.49842834472656,
+  "mec_d": 502.9968566894531,
+  "fill_of_mec": 0.9574590773529001,
+  "touches_frame": false,
+  "area_px2": 190257.0,
+  "centroid": [
+   616.6188918147558,
+   772.076906500155
+  ],
+  "through_openings": 3
+ },
+ "detection_scale": 0.9940419971822938,
+ "drawing": {
+  "file": "dxf_files\\box_front.dxf",
+  "info": {
+   "units": 4,
+   "mm_per_unit": 1.0,
+   "source": "dxf",
+   "skipped": {}
+  },
+  "registration": {
+   "coarse_iou": 0.7101434122710718,
+   "mirror": false,
+   "angle_deg": 266.0121273379764,
+   "px_per_mm": 7.860573229062901,
+   "outline_rms_px": 11.304802894592285,
+   "outline_within_2px": 0.0325,
+   "start": "outline overlap search",
+   "scale_outline": 7.862064038602699,
+   "outline_sigma_px": 2.1948258718163616,
+   "feature_sigma_px": 1.0,
+   "n_datum": 1,
+   "score": 0.5279583609109566,
+   "hole_agreement": 0.4927083609109566,
+   "edge_found": 0.1175,
+   "feature_agreement": 0.36953127068321745,
+   "candidates": [
+    {
+     "start": "outline overlap search",
+     "mirrored": false,
+     "angle_deg": 266.01,
+     "px_per_mm": 7.8606,
+     "score": 0.575,
+     "hole_agreement": 0.493,
+     "feature_agreement": 0.37
+    },
+    {
+     "start": "outline overlap search",
+     "mirrored": true,
+     "angle_deg": 313.15,
+     "px_per_mm": 7.3036,
+     "score": 0.443,
+     "hole_agreement": 0.0,
+     "feature_agreement": 0.062
+    }
+   ],
+   "transform_px_from_mm": {
+    "A": [
+     [
+      -0.546666126220415,
+      7.841541151833836
+     ],
+     [
+      -7.841541151833836,
+      -0.546666126220415
+     ]
+    ],
+    "t": [
+     1505.9274597142348,
+     1903.6586172110915
+    ],
+    "usage": "x_px = A @ [x_mm, y_mm] + t  (drawing y down)"
+   },
+   "mm_per_px": 0.12721718516694172,
+   "scale_source": "fitted to the drawing",
+   "outline_p95_px_joint": 18.03329086303711,
+   "outline_p95_px_own": 18.03329086303711,
+   "outline_own_scale": 7.927485966753607,
+   "outline_alignment": "joint with holes/openings",
+   "outline_rms_mm": 1.4381652031171255,
+   "outline_edge_found": 0.4375,
+   "uncertainty_edge_mm": 1.4437809264769785,
+   "uncertainty_hole_position_mm": 1.4437809264769785,
+   "uncertainty_hole_size_mm": 0.12721718516694172,
+   "hole_centre_rms_px": 11.304802894592285,
+   "detection_tolerance": {
+    "position_mm": "max(1.0, 0.5 x nominal size)",
+    "size_mm": "max(1.5, 0.5 x nominal size)"
+   },
+   "features_inside_recess": []
+  },
+  "outline_size_mm": [
+   49.22500000000001,
+   82.55
+  ],
+  "results": [
+   {
+    "id": "outline",
+    "status": "DEVIATES",
+    "dimension_check": "UNCERTAIN",
+    "detected": false,
+    "rms_mm": 0.950713038444519,
+    "max_excess_mm": 2.294144630432129,
+    "max_shortfall_mm": -2.412891387939453,
+    "fraction_out": 0.32375
+   },
+   {
+    "id": "W1",
+    "kind": "contour",
+    "status": "DEVIATES",
+    "dimension_check": "DEVIATES",
+    "detected": false,
+    "note": "inner contour (recess/step edge): edge found on 74%, median offset -0.47 mm",
+    "edge_found": 0.74
+   },
+   {
+    "id": "H1",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "UNCERTAIN",
+    "detected": true,
+    "nominal": {
+     "x": 161.99289488634656,
+     "y": -74.83585394305777,
+     "d": 7.92506775292462
+    },
+    "position_dev_mm": 0.602,
+    "diameter_dev_mm": -0.188,
+    "note": "weak wall fit; within +-1.44 mm (photo uncertainty) of the tolerance limit"
+   },
+   {
+    "id": "H2",
+    "kind": "hole",
+    "status": "MISSING",
+    "dimension_check": "MISSING",
+    "detected": null,
+    "nominal": {
+     "x": 165.17383798769197,
+     "y": -95.46943019709633,
+     "d": 3.1853052624330287
+    },
+    "position_dev_mm": null,
+    "diameter_dev_mm": null,
+    "note": "no round hole within 1.25 diameters of the expected place (2 gray levels contrast there)"
+   },
+   {
+    "id": "H3",
+    "kind": "hole",
+    "status": "DETECTED",
+    "dimension_check": "CAN'T VERIFY",
+    "detected": true,
+    "nominal": {
+     "x": 165.17383798769188,
+     "y": -127.21943019709596,
+     "d": 3.185305262425034
+    },
+    "position_dev_mm": 0.05,
+    "diameter_dev_mm": -0.556,
+    "note": "within +-1.44 mm (photo uncertainty) of the tolerance limit"
+   },
+   {
+    "id": "RING1",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   },
+   {
+    "id": "RING2",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   },
+   {
+    "id": "RING3",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   },
+   {
+    "id": "RING4",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   },
+   {
+    "id": "RING5",
+    "kind": "ring",
+    "status": "NOT MEASURED"
+   }
+  ],
+  "status_counts": {
+   "DEVIATES": 2,
+   "DETECTED": 2,
+   "MISSING": 1,
+   "NOT MEASURED": 5
+  },
+  "detected": {
+   "found": 2,
+   "checked": 5
+  },
+  "dimension_check_counts": {
+   "UNCERTAIN": 2,
+   "DEVIATES": 1,
+   "MISSING": 1,
+   "CAN'T VERIFY": 1
+  }
+ },
+ "steps_run": [
+  "part",
+  "drawing_load",
+  "drawing_align",
+  "drawing_outline",
+  "drawing_features",
+  "drawing_report"
+ ],
+ "steps_skipped": [],
+ "warnings": [
+  "The photo outline overlaps the drawing only 71%: wrong drawing, the other face, a damaged part, or the outline was not separated cleanly (reflections). Check the image."
+ ],
+ "notes": [
+  "The part body is split by internal edge/step lines into 2 regions; those edges are not checked.",
+  "Scale comes from fitting the drawing, so a part that is uniformly too big or too small cannot be detected. For absolute size, calibrate the camera once and pass --mm-per-px."
+ ]
+}

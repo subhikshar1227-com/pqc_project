@@ -1,0 +1,157 @@
+{
+ "image": "C:\\Users\\User\\Desktop\\projects\\pqc_x\\PRODUCT_QUALITY_CHECK\\photo7.png",
+ "image_size_wh": [
+  1280,
+  720
+ ],
+ "laplacian_var": 52.65414279377783,
+ "profile": "drawing",
+ "part": {
+  "segmentation": "edges",
+  "polarity": "dark part on light background",
+  "otsu_threshold": 135.0,
+  "mec_x": 613.476318359375,
+  "mec_y": 369.78997802734375,
+  "mec_r": 285.8932189941406,
+  "mec_d": 571.7864379882812,
+  "fill_of_mec": 0.9415745431727659,
+  "touches_frame": false,
+  "area_px2": 241775.5,
+  "centroid": [
+   622.3716471134034,
+   377.4398839694951
+  ],
+  "through_openings": 3
+ },
+ "detection_scale": 0.8744523597991449,
+ "drawing": {
+  "file": "dxf_files\\box_rear.dxf",
+  "info": {
+   "units": 4,
+   "mm_per_unit": 1.0,
+   "source": "dxf",
+   "skipped": {}
+  },
+  "registration": {
+   "coarse_iou": 0.7503655818921856,
+   "mirror": false,
+   "angle_deg": 228.0809007383826,
+   "px_per_mm": 8.44249073393738,
+   "outline_rms_px": 10.73121166229248,
+   "outline_within_2px": 0.0775,
+   "start": "outline overlap search",
+   "scale_outline": 8.44249073393738,
+   "outline_sigma_px": 2.399784618262134,
+   "feature_sigma_px": 1.0,
+   "n_datum": 0,
+   "score": 0.06112499999999999,
+   "hole_agreement": 0.0,
+   "edge_found": 0.20375,
+   "feature_agreement": 0.13203023122116747,
+   "candidates": [
+    {
+     "start": "outline overlap search",
+     "mirrored": false,
+     "angle_deg": 228.08,
+     "px_per_mm": 8.4425,
+     "score": 0.582,
+     "hole_agreement": 0.0,
+     "feature_agreement": 0.132
+    },
+    {
+     "start": "outline overlap search",
+     "mirrored": true,
+     "angle_deg": 29.91,
+     "px_per_mm": 8.6092,
+     "score": 0.574,
+     "hole_agreement": 0.0,
+     "feature_agreement": 0.115
+    }
+   ],
+   "transform_px_from_mm": {
+    "A": [
+     [
+      -5.6402645358487336,
+      6.2819635272950745
+     ],
+     [
+      -6.2819635272950745,
+      -5.6402645358487336
+     ]
+    ],
+    "t": [
+     2098.5790563244504,
+     705.6914909279467
+    ],
+    "usage": "x_px = A @ [x_mm, y_mm] + t  (drawing y down)"
+   },
+   "mm_per_px": 0.11844845692044052,
+   "scale_source": "fitted to the drawing",
+   "outline_p95_px_joint": 19.592172622680664,
+   "outline_p95_px_own": 19.42626190185547,
+   "outline_own_scale": 8.363401075333956,
+   "outline_alignment": "joint with holes/openings",
+   "outline_rms_mm": 1.2710954622851798,
+   "outline_edge_found": 0.60375,
+   "uncertainty_edge_mm": 1.2766024092053125,
+   "uncertainty_hole_position_mm": 1.2766024092053125,
+   "uncertainty_hole_size_mm": 0.11844845692044052,
+   "hole_centre_rms_px": 10.73121166229248,
+   "detection_tolerance": {
+    "position_mm": "max(1.0, 0.5 x nominal size)",
+    "size_mm": "max(1.5, 0.5 x nominal size)"
+   },
+   "features_inside_recess": []
+  },
+  "outline_size_mm": [
+   49.22500000000001,
+   82.55
+  ],
+  "results": [
+   {
+    "id": "outline",
+    "status": "DETECTED",
+    "dimension_check": "DEVIATES",
+    "detected": true,
+    "rms_mm": 0.9863197803497314,
+    "max_excess_mm": 2.3798868656158447,
+    "max_shortfall_mm": -2.3580515384674072,
+    "fraction_out": 0.4025
+   },
+   {
+    "id": "W1",
+    "kind": "opening",
+    "status": "DEVIATES",
+    "dimension_check": "DEVIATES",
+    "detected": false,
+    "note": "overlap with drawing 13%; L +40.42 W +40.44 mm (brightness region)"
+   }
+  ],
+  "status_counts": {
+   "DETECTED": 1,
+   "DEVIATES": 1
+  },
+  "detected": {
+   "found": 1,
+   "checked": 2
+  },
+  "dimension_check_counts": {
+   "DEVIATES": 2
+  }
+ },
+ "steps_run": [
+  "part",
+  "drawing_load",
+  "drawing_align",
+  "drawing_outline",
+  "drawing_features",
+  "drawing_report"
+ ],
+ "steps_skipped": [],
+ "warnings": [
+  "The photo outline overlaps the drawing only 75%: wrong drawing, the other face, a damaged part, or the outline was not separated cleanly (reflections). Check the image."
+ ],
+ "notes": [
+  "Scale comes from fitting the drawing, so a part that is uniformly too big or too small cannot be detected. For absolute size, calibrate the camera once and pass --mm-per-px."
+ ]
+}
